@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { toast, Toaster } from "sonner";
 import { validateContactForm, type ContactFormData } from "../utils/validation";
 import { contactContent } from "../content/contact";
-import { submitContactFormApi } from "../services/contactApi";
+import { sendContactFormWithEmailJS } from "../services/emailjs";
 
 interface FormErrors {
   name?: string;
@@ -51,9 +51,10 @@ export const ContactForm: React.FC = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await submitContactFormApi(formData);
-      if (!response.success) {
-        throw new Error(response.error || "Failed to send message");
+      const result = await sendContactFormWithEmailJS(formData);
+      console.log("🚀 ~ handleSubmit ~ result:", result)
+      if (!result.success) {
+        throw new Error(result.error ?? "Failed to send message");
       }
 
       toast.success("Message sent successfully! We'll get back to you soon.", {
@@ -83,7 +84,10 @@ export const ContactForm: React.FC = () => {
   return (
     <div className="w-full max-w-[684px]">
       <Toaster position="top-center" richColors />
-      <form onSubmit={handleSubmit} className="flex flex-col gap-[54px] sm:gap-[74px]">
+      <form
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-[54px] sm:gap-[74px]"
+        >
         <div className="flex flex-col gap-4 sm:gap-5">
           <div>
           <input

@@ -43,7 +43,7 @@ export function About() {
               <img
                 src={aboutContent.previewImage.src}
                 alt={aboutContent.previewImage.alt}
-                className="max-h-[420px] w-auto object-contain"
+                className="max-h-[620px] w-auto object-contain"
                 loading="lazy"
               />
             </div>
