@@ -17,8 +17,8 @@ export type HeaderContent = {
 export const headerContent: HeaderContent = {
   logoSrc: logo,
   logoAlt: "PersonAI logo",
-  ctaText: "Get Started",
-  ctaHref: "#download",
+  ctaText: "Contact Us",
+  ctaHref: "#contact",
   navLinks: [
     { href: "#about", label: "About" },
     { href: "#features", label: "Features" },

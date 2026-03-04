@@ -4,7 +4,6 @@ import { Features } from "../components/Feature";
 import { ContactUs } from "../components/ContactUs";
 import { DownloadBanner } from "../components/DownloadBanner";
 import { Footer } from "../components/Footer";
-import { Hero } from "../components/Hero";
 import { Testimonial } from "../components/Testimonial";
 import { Faqs } from "../components/Faqs";
 
@@ -13,7 +12,6 @@ export function HomePage() {
     <>
       <Header />
       <main>
-        <Hero />
         <About />
         {/* <HowItWorks /> */}
         <section>

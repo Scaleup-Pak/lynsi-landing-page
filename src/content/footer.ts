@@ -76,7 +76,7 @@ export const footerContent: FooterContent = {
   company: {
     heading: "Product",
     links: [
-      { label: "How it Works", href: "#how-it-works" },
+      { label: "About Us", href: "#about" },
       { label: "Features", href: "#features" },
       { label: "Testimonials", href: "#testimonials" },
       { label: "FAQ's", href: "#faqs" },
