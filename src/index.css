@@ -16,6 +16,8 @@
   --theme-surface: #f3f3f3;
   --theme-primary: #ccb4b2;
   --theme-primary-hover: #b89e9c;
+  --theme-accent: #533336;
+  --theme-accent-hover: #452a2d;
   --theme-ink: #1a1212;
   --theme-primary-ring: rgba(204, 180, 178, 0.2);
   --theme-primary-ring-strong: rgba(204, 180, 178, 0.14);
@@ -48,6 +50,9 @@
   --color-primary-hover: #b89e9c;
   --color-primary-ring: rgba(204, 180, 178, 0.2);
   --color-primary-ring-strong: rgba(204, 180, 178, 0.14);
+
+  --color-accent: #533336;
+  --color-accent-hover: #452a2d;
 
   --color-ink: #1a1212;
   --color-card-border: rgba(26, 18, 18, 0.1);

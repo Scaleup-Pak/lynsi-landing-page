@@ -39,7 +39,7 @@ export function StoreButtons({
           target="_blank"
           rel="noopener noreferrer"
           aria-label={button.ariaLabel}
-          className="flex h-[56px] w-[181px] cursor-pointer items-center gap-2.5 rounded-[12px] bg-ink px-3.5 text-white transition hover:opacity-90"
+          className="flex h-[56px] w-[181px] cursor-pointer items-center gap-2.5 rounded-[12px] bg-white px-3.5 text-accent transition hover:opacity-90"
         >
           <img
             src={button.iconSrc}

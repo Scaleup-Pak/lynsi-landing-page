@@ -145,7 +145,7 @@ export const ContactForm: React.FC = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="h-[50px] w-full rounded-[10px] bg-primary px-6 text-[18px] font-semibold leading-8 text-white transition hover:bg-primary-hover disabled:cursor-not-allowed disabled:opacity-70"
+          className="h-[50px] w-full rounded-[10px] bg-primary px-6 cursor-pointer text-[18px] font-semibold leading-8 text-accent transition hover:bg-primary-hover disabled:cursor-not-allowed disabled:opacity-70"
         >
           {isSubmitting ? contactContent.sendingButtonText : contactContent.submitButtonText}
         </button>
