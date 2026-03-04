@@ -24,6 +24,7 @@
   --theme-card-border: rgba(26, 18, 18, 0.1);
   --theme-card-date: rgba(26, 18, 18, 0.45);
   --theme-surface-soft: #f6f6f6;
+  --theme-surface-card: #f8f8f8;
 
   /* Header theme tokens */
   --header-bg: var(--theme-surface);
@@ -58,6 +59,7 @@
   --color-card-border: rgba(26, 18, 18, 0.1);
   --color-card-date: rgba(26, 18, 18, 0.45);
   --color-surface-soft: #f6f6f6;
+  --color-surface-card: #f8f8f8;
 }
 
 html,

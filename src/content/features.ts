@@ -1,9 +1,10 @@
 import featureImage1 from "../assets/images/features/image1.png";
 import featureImage2 from "../assets/images/features/image2.png";
 import featureImage3 from "../assets/images/features/image3.png";
-import cameraIcon from "../assets/images/features/Camera.png";
-import fileTextIcon from "../assets/images/features/FileText.png";
-import downloadIcon from "../assets/images/features/DownloadSimple.png";
+import CheckCircle from "../assets/images/features/CheckCircle.png";
+import Palette from "../assets/images/features/Palette.png";
+import PieChart from "../assets/images/features/PieChart.png";
+import AlarmClock from "../assets/images/features/Alarm.png";
 
 export type FeatureStep = {
   id: string;
@@ -27,32 +28,41 @@ export const featuresContent: FeaturesContent = {
     "From onboarding to daily organization, PersonAI makes life management simple, intelligent, and personalized. Balance your life across work, home, wellness, and more—all in one intuitive app.",
   steps: [
     {
-      id: "personalized-setup",
-      title: "Personalized Setup",
+      id: "tasks-planner",
+      title: "Tasks Planner",
       description:
-        "Select 3-7 life areas that matter to you, answer a quick AI questionnaire, and let PersonAI understand your unique situation, workload, and preferences to provide tailored suggestions.",
-      iconSrc: cameraIcon,
+        "Create, organize, and manage all your tasks in one place, making it easy to plan your day and stay focused on what matters most.",
+      iconSrc: CheckCircle,
       imageSrc: featureImage1,
-      imageAlt: "PersonAI onboarding and life area selection",
+      imageAlt: "PersonAI tasks planner interface",
     },
     {
-      id: "smart-organization",
-      title: "Smart Task Organization",
+      id: "task-reminders",
+      title: "Task Reminders",
       description:
-        "Organize tasks by life area, use the drag-and-drop weekly planner, and see your progress at a glance. PersonAI keeps everything synced across devices and works fully offline.",
-      iconSrc: fileTextIcon,
+        "Set intelligent reminders for your tasks so you’re notified at the right time and never miss an important deadline or commitment.",
+      iconSrc: AlarmClock,
       imageSrc: featureImage2,
-      imageAlt: "PersonAI weekly planner and task organization",
+      imageAlt: "PersonAI task reminders and scheduling",
       reverse: true,
     },
     {
-      id: "ai-insights",
-      title: "AI Insights & Suggestions",
+      id: "personai-insights",
+      title: "PersonAI Insights",
       description:
-        "Get personalized task suggestions daily, track your life balance score, and receive gentle nudges to keep neglected areas on track. Like or dislike suggestions to help AI learn your preferences.",
-      iconSrc: downloadIcon,
+        "View clear insights into how many tasks you’ve completed and how many are still pending, helping you track progress and improve productivity over time.",
+      iconSrc: PieChart,
       imageSrc: featureImage3,
-      imageAlt: "PersonAI AI suggestions and insights dashboard",
+      imageAlt: "PersonAI productivity insights dashboard",
+    },
+    {
+      id: "customizable-experience",
+      title: "Customizable Experience",
+      description:
+        "Personalize the app with your preferred color palette and visual style, creating an experience that feels comfortable, familiar, and uniquely yours.",
+      iconSrc: Palette,
+      imageSrc: featureImage1,
+      imageAlt: "PersonAI customizable interface with color palettes",
     },
   ],
 };

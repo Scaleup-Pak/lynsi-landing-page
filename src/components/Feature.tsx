@@ -2,7 +2,10 @@ import { featuresContent } from "../content/features";
 
 export function Features() {
   return (
-    <section id="features" className="w-full py-16 sm:py-20 lg:py-24 bg-background">
+    <section
+      id="features"
+      className="w-full py-16 sm:py-20 lg:py-24 bg-background"
+    >
       <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-[106px]">
         <div className="mx-auto flex w-full max-w-[1200px] flex-col items-center gap-12 sm:gap-14 lg:gap-16">
           <div className="flex w-full flex-col items-center gap-5 text-center">
@@ -14,7 +17,7 @@ export function Features() {
             </p>
           </div>
 
-          <div className="flex w-full flex-col gap-12 sm:gap-16 lg:gap-[110px]">
+          <div className="flex w-full flex-col gap-12 sm:gap-16  lg:gap-[110px]">
             {featuresContent.steps.map((step) => {
               const rowDirection = step.reverse
                 ? "lg:flex-row-reverse"
@@ -23,7 +26,7 @@ export function Features() {
               return (
                 <article
                   key={step.id}
-                  className={`flex w-full flex-col items-center gap-8 ${rowDirection} lg:gap-12`}
+                  className={`flex w-full flex-col items-center gap-8 bg-surface-card rounded-[10px] p-6 ${rowDirection} lg:gap-12`}
                 >
                   <div className="w-full max-w-[488px]">
                     <div className="flex flex-col items-start gap-8 sm:gap-10">
@@ -42,6 +45,24 @@ export function Features() {
                         <p className="text-base leading-7 tracking-[-0.01em] text-muted-foreground sm:text-lg">
                           {step.description}
                         </p>
+                        <button
+                          className="
+    inline-flex items-center justify-center mt-4
+    rounded-[10px]
+    bg-primary text-accent
+    px-6 sm:px-8
+    py-2.5 sm:py-3
+    text-sm sm:text-base font-semibold
+    shadow-sm
+    hover:bg-primary-hover
+    focus-visible:outline-none
+    focus-visible:ring-2
+    focus-visible:ring-primary-ring
+    focus-visible:ring-offset-2
+  "
+                        >
+                          Explore PersonAI App
+                        </button>
                       </div>
                     </div>
                   </div>
