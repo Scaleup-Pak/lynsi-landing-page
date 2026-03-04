@@ -22,9 +22,10 @@ export type DownloadBannerContent = {
 
 export const downloadBannerContent: DownloadBannerContent = {
   previewImageSrc: bannerImage,
-  previewImageAlt: "Lalalaugh app download section preview",
-  heading: "Download the AI Home Inspection App",
-  description: "Download AI Home Inspection App today and Inspect Your Home.",
+  previewImageAlt: "PersonAI app download preview",
+  heading: "Download PersonAI Today",
+  description:
+    "Your personal AI assistant for organizing life across work, home, wellness, and more. Start balancing your life today.",
   storeButtons: [
     {
       id: "google-play",
@@ -32,8 +33,8 @@ export const downloadBannerContent: DownloadBannerContent = {
       iconAlt: "Google Play Store icon",
       eyebrow: "GET IT ON",
       label: "Google Play",
-      ariaLabel: "Download on Google Play",
-      href: "https://play.google.com/store/apps/details?id=com.coachmendai.app&pcampaignid=web_share",
+      ariaLabel: "Download PersonAI on Google Play",
+      href: "#",
     },
     {
       id: "app-store",
@@ -41,8 +42,8 @@ export const downloadBannerContent: DownloadBannerContent = {
       iconAlt: "Apple App Store icon",
       eyebrow: "Download On the",
       label: "App Store",
-      ariaLabel: "Download on the App Store",
-      href: "https://apps.apple.com/us/app/mend-pain-relief-wellness/id6754682775",
+      ariaLabel: "Download PersonAI on the App Store",
+      href: "#",
     },
   ],
 };

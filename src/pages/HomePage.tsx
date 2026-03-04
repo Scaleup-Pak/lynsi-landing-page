@@ -1,10 +1,10 @@
 import { Header } from "../components/Header";
+import { About } from "../components/About";
 import { Features } from "../components/Feature";
 import { ContactUs } from "../components/ContactUs";
 import { DownloadBanner } from "../components/DownloadBanner";
 import { Footer } from "../components/Footer";
 import { Hero } from "../components/Hero";
-import { HowItWorks } from "../components/HowItWorks";
 import { Testimonial } from "../components/Testimonial";
 import { Faqs } from "../components/Faqs";
 
@@ -14,7 +14,8 @@ export function HomePage() {
       <Header />
       <main>
         <Hero />
-        <HowItWorks />\
+        <About />
+        {/* <HowItWorks /> */}
         <section>
           <Features />
         </section>

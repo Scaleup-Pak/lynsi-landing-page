@@ -25,28 +25,27 @@ export type HeroContent = {
 
 export const heroContent: HeroContent = {
   headline: {
-    accent: "Smarter",
-    lineOne: "Home Maintenance",
-    lineTwo: "Starts Here",
+    accent: "Organize Your Life",
+    lineOne: "Balance Work, Home",
+    lineTwo: "& Everything That Matters",
   },
   description:
-    "Easily upload photos of your property and let our advanced AI analyze every detail. Receive a comprehensive report with risk levels, damage identification, and repair cost estimates-fast and accurate.",
+    "PersonAI is your personal AI assistant that helps you manage tasks across all 7 life areas. Get AI-powered suggestions, weekly planning, and insights to reduce mental load and stay balanced.",
   storeButtons: {
     googlePlay: {
       eyebrow: "GET IT ON",
       label: "Google Play",
-      ariaLabel: "Download on Google Play",
-      href: "https://play.google.com/store/apps/details?id=com.coachmendai.app&pcampaignid=web_share",
+      ariaLabel: "Download PersonAI on Google Play",
+      href: "#",
     },
     appStore: {
       eyebrow: "Download On the",
       label: "App Store",
-      ariaLabel: "Download on the App Store",
-      href: "https://apps.apple.com/us/app/mend-pain-relief-wellness/id6754682775",
+      ariaLabel: "Download PersonAI on the App Store",
+      href: "#",
     },
   },
   imageSrc: heroImage,
-  previewImageLink:
-    "https://apps.apple.com/us/app/mend-pain-relief-wellness/id6754682775",
-  imageAlt: "AI home inspection mobile app preview",
+  previewImageLink: "#",
+  imageAlt: "PersonAI mobile app interface preview",
 };

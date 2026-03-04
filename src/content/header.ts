@@ -16,14 +16,14 @@ export type HeaderContent = {
 
 export const headerContent: HeaderContent = {
   logoSrc: logo,
-  logoAlt: "AI Home Inspection logo",
-  ctaText: "Contact Us",
-  ctaHref: "#contact",
+  logoAlt: "PersonAI logo",
+  ctaText: "Get Started",
+  ctaHref: "#download",
   navLinks: [
-    { href: "#how-it-works", label: "How It Works" },
+    { href: "#about", label: "About" },
     { href: "#features", label: "Features" },
     { href: "#testimonials", label: "Testimonials" },
-    { href: "#faqs", label: "FAQ's" },
+    { href: "#faqs", label: "FAQs" },
   ],
   activeSections: [
     "#about",

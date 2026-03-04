@@ -12,14 +12,14 @@ export type ContactContent = {
 };
 
 export const contactContent: ContactContent = {
-  heading: "Contact Us",
-  subheading: "Please send us a note and we'll get back to you as quickly as possible.",
+  heading: "Get in Touch",
+  subheading: "Have questions about PersonAI? We're here to help you take control of your life.",
   fields: {
-    namePlaceholder: "Name",
+    namePlaceholder: "Your Name",
     emailPlaceholder: "Email Address",
     subjectPlaceholder: "Subject",
-    messagePlaceholder: "Message",
+    messagePlaceholder: "Tell us what's on your mind",
   },
   submitButtonText: "Send Message",
-  sendingButtonText: "Sending Message...",
+  sendingButtonText: "Sending...",
 };

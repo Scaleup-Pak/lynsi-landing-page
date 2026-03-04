@@ -10,32 +10,27 @@ export type LegalFooterContent = {
 };
 
 export const legalFooterContent: LegalFooterContent = {
-  copyright: "AI Home Inspection @ all rights reserved",
+  copyright: "PersonAI © 2026 Softaims LLC. All rights reserved.",
   socialLinks: [
     {
-      id: "youtube",
-      href: "https://www.youtube.com/@lalalaughapp",
-      ariaLabel: "YouTube",
-    },
-    {
-      id: "tiktok",
-      href: "https://www.tiktok.com/@lalalaughapp",
-      ariaLabel: "TikTok",
-    },
-    {
       id: "linkedin",
-      href: "https://www.linkedin.com/company/109815478/admin/dashboard/",
+      href: "#",
       ariaLabel: "LinkedIn",
     },
     {
+      id: "facebook",
+      href: "#",
+      ariaLabel: "Facebook",
+    },
+    {
       id: "instagram",
-      href: "https://www.instagram.com/lalalaughapp/",
+      href: "#",
       ariaLabel: "Instagram",
     },
     {
-      id: "facebook",
-      href: "https://www.facebook.com/profile.php?id=61583015866921&sk=about",
-      ariaLabel: "Facebook",
+      id: "youtube",
+      href: "#",
+      ariaLabel: "YouTube",
     },
   ],
 };

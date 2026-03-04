@@ -22,37 +22,37 @@ export type FeaturesContent = {
 };
 
 export const featuresContent: FeaturesContent = {
-  heading: "Process Our AI Inspection Follows",
+  heading: "How PersonAI Works for You",
   description:
-    "From uploading photos to receiving a detailed AI-generated report, our process makes home inspections fast, accurate, and hassle-free. Detect damage, assess risks, estimate repair costs, and get instant guidance-all within minutes.",
+    "From onboarding to daily organization, PersonAI makes life management simple, intelligent, and personalized. Balance your life across work, home, wellness, and more—all in one intuitive app.",
   steps: [
     {
-      id: "capture-import",
-      title: "Capture or Import Photo",
+      id: "personalized-setup",
+      title: "Personalized Setup",
       description:
-        "Take pictures of your home using your camera or select them from your gallery.",
+        "Select 3-7 life areas that matter to you, answer a quick AI questionnaire, and let PersonAI understand your unique situation, workload, and preferences to provide tailored suggestions.",
       iconSrc: cameraIcon,
       imageSrc: featureImage1,
-      imageAlt: "Upload inspection photos screen",
+      imageAlt: "PersonAI onboarding and life area selection",
     },
     {
-      id: "ai-report",
-      title: "AI Damage Detection & Report Generation",
+      id: "smart-organization",
+      title: "Smart Task Organization",
       description:
-        "Our AI analyzes the images, identifies damaged areas, assesses risk levels, and provides an estimated repair cost.",
+        "Organize tasks by life area, use the drag-and-drop weekly planner, and see your progress at a glance. PersonAI keeps everything synced across devices and works fully offline.",
       iconSrc: fileTextIcon,
       imageSrc: featureImage2,
-      imageAlt: "AI generated damage report screen",
+      imageAlt: "PersonAI weekly planner and task organization",
       reverse: true,
     },
     {
-      id: "download-chat",
-      title: "Download & Chat with AI",
+      id: "ai-insights",
+      title: "AI Insights & Suggestions",
       description:
-        "Get your detailed inspection report instantly. Download it for reference, and chat with the AI to clarify any part of the report or ask questions.",
+        "Get personalized task suggestions daily, track your life balance score, and receive gentle nudges to keep neglected areas on track. Like or dislike suggestions to help AI learn your preferences.",
       iconSrc: downloadIcon,
       imageSrc: featureImage3,
-      imageAlt: "Download report and chat screen",
+      imageAlt: "PersonAI AI suggestions and insights dashboard",
     },
   ],
 };

@@ -23,80 +23,55 @@ export type TermsOfContentPageContent = {
 
 export const termsOfContentPageContent: TermsOfContentPageContent = {
   logoSrc: footerLogo,
-  logoAlt: "LA LA LAUGH Logo",
-  pageTitle: "La La Laugh Community Guidelines",
+  logoAlt: "PersonAI Logo",
+  pageTitle: "Acceptable Use Policy",
   intro:
-    "La La Laugh was built to spread joy through humor. To keep our community safe, inclusive, and fun, we ask every user and creator to follow these guidelines. By using La La Laugh, you agree to respect these rules.",
-  notAllowedTitle: "What's Not Allowed",
+    "PersonAI is designed to help you organize your life effectively and respectfully. By using PersonAI, you agree to use the Service in accordance with these guidelines.",
+  notAllowedTitle: "Prohibited Uses",
   notAllowedRules: [
     {
-      title: "Offensive or discriminatory content",
+      title: "Illegal Activity",
       points: [
-        "No hate speech, bullying, or mean-spirited jokes targeting religion, race, gender, sexual orientation, nationality, or other personal traits.",
-        "Comedy that humiliates or intimidates individuals or groups isn't welcome.",
+        "Do not use PersonAI to plan, coordinate, or document illegal activities.",
+        "Do not store content that violates applicable laws or regulations.",
       ],
     },
     {
-      title: "Violence and harm",
+      title: "Harmful Content",
       points: [
-        "No realistic depictions of people or animals being killed, tortured, or abused.",
-        "No content that encourages violence, reckless behavior, or the use of weapons.",
+        "Do not use the Service to store content that promotes violence, harm, or harassment.",
+        "Do not use PersonAI to facilitate abuse or exploitation of others.",
       ],
     },
     {
-      title: "Sexually explicit content",
+      title: "Security Violations",
       points: [
-        "Overly sexual or pornographic material is not allowed.",
-        "Humor with explicit sexual organs or acts is prohibited.",
+        "Do not attempt to breach security measures or access unauthorized data.",
+        "Do not use the Service to distribute malware or harmful code.",
       ],
     },
     {
-      title: "Exploiting sensitive events",
+      title: "Service Abuse",
       points: [
-        "Don't post content that profits from or makes light of tragedies (e.g., violent conflicts, terrorist attacks, epidemics).",
-      ],
-    },
-    {
-      title: "Religious attacks",
-      points: [
-        "Inflammatory religious commentary and misleading use of sacred texts are not permitted.",
-      ],
-    },
-    {
-      title: "Illegal or criminal activity",
-      points: [
-        "No content that encourages crime or facilitates illegal purchases (e.g., firearms, drugs).",
-        "We will cooperate with law enforcement if needed.",
-      ],
-    },
-    {
-      title: "Targeting kids",
-      points: [
-        "Currently, La La Laugh does not allow content directed at children. Future features for younger users will be designed under strict supervision and parental controls.",
-      ],
-    },
-    {
-      title: "Spam and unwanted contact",
-      points: [
-        "Don't use La La Laugh to spam, harass, or send unwanted messages.",
-        "Attempting to use the platform for solicitation or scams will result in removal.",
+        "Do not use automated tools to access or manipulate the Service.",
+        "Do not attempt to overwhelm or disrupt the Service infrastructure.",
       ],
     },
   ],
   enforcement: {
-    title: "How We Enforce These Rules",
+    title: "Enforcement",
     points: [
-      "Users can report content or creators directly in the app.",
-      "Reported content will be reviewed, and we aim to remove objectionable material within 24 hours.",
-      "Accounts that repeatedly break the rules may lose monetization rights or be banned.",
+      "We reserve the right to review accounts and content if violations are reported or detected.",
+      "Accounts found in violation may be suspended or terminated.",
+      "We may cooperate with law enforcement when required by law.",
     ],
   },
   remember: {
     title: "Remember",
     points: [
-      "La La Laugh is for humor and joy only.",
-      "We welcome creativity, parody, and satire - but not at the expense of safety, dignity, or respect.",
-      "If you're unsure whether something crosses the line, it probably does. Choose kindness.",
+      "PersonAI is your personal productivity tool—use it to organize and improve your life.",
+      "Respect our Service and other users by following these guidelines.",
+      "If you have questions about acceptable use, contact us at support@softaims.com.",
     ],
   },
 };

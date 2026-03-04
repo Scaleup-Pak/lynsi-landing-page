@@ -26,47 +26,45 @@ export type HowItWorksContent = {
 };
 
 export const howItWorksContent: HowItWorksContent = {
-  heading: "Advanced AI Inspection Features for Your Home",
+  heading: "Your Personal AI Life Assistant",
   description:
-    "Our AI app makes home inspections effortless-detecting damage, assessing risks, estimating repair costs, and providing instant actionable insights.",
+    "PersonAI combines intelligent task management with AI-powered insights to help you balance every area of your life—from work and family to wellness and finances.",
   leftPanel: {
-    primaryAction: "Download Report",
-    primaryActionHref:
-      "https://play.google.com/store/apps/details?id=com.coachmendai.app&pcampaignid=web_share",
-    secondaryAction: "Chat with Ai Inspector",
-    secondaryActionHref:
-      "https://apps.apple.com/us/app/mend-pain-relief-wellness/id6754682775",
+    primaryAction: "Download Now",
+    primaryActionHref: "#",
+    secondaryAction: "Watch Demo",
+    secondaryActionHref: "#features",
     imageSrc: howItWorksImage,
-    imageAlt: "AI home inspection app screen preview",
+    imageAlt: "PersonAI app dashboard preview",
   },
   features: [
     {
       icon: "risk",
       iconSrc: riskIcon,
-      title: "Damage Detection & Risk Assessment",
+      title: "7 Life Areas Organization",
       description:
-        "Understand the severity of detected damage with clear risk levels, helping you prioritize repairs effectively.",
+        "Organize tasks across Work, Home & Family, Personal & Wellness, Learning/Goals, Side Hustle, Events/Social, and Finances. Select what matters and PersonAI keeps it all balanced.",
     },
     {
       icon: "report",
       iconSrc: reportIcon,
-      title: "Quick Reports",
+      title: "AI-Powered Suggestions",
       description:
-        "Receive comprehensive inspection reports in minutes, eliminating the need for time-consuming physical inspections.",
+        "Get 3-7 personalized task suggestions daily based on your patterns, preferences, and neglected areas. Like or dislike to help AI learn your style.",
     },
     {
       icon: "chat",
       iconSrc: chatIcon,
-      title: "AI Home Inspector",
+      title: "Life Balance Insights",
       description:
-        "Clarify any part of your inspection report instantly by chatting with the AI for personalized guidance.",
+        "Track your life balance score, see which areas need attention, and get gentle nudges to maintain consistency across all aspects of your life.",
     },
     {
       icon: "estimate",
       iconSrc: estimateIcon,
-      title: "Repair Estimates",
+      title: "Seamless Sync & Offline",
       description:
-        "Get accurate cost estimates for repairs, allowing you to plan and budget with confidence.",
+        "Work anywhere with full offline support. All changes sync automatically across devices when online, with automatic backup on every session.",
     },
   ],
 };
