@@ -10,7 +10,7 @@ export type LegalFooterContent = {
 };
 
 export const legalFooterContent: LegalFooterContent = {
-  copyright: "PersonAI © 2026 Softaims LLC. All rights reserved.",
+  copyright: "© Lynsi 2026. All rights reserved.",
   socialLinks: [
     {
       id: "linkedin",

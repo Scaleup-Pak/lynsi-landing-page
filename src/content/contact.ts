@@ -12,8 +12,9 @@ export type ContactContent = {
 };
 
 export const contactContent: ContactContent = {
-  heading: "Get in Touch",
-  subheading: "Have questions about PersonAI? We're here to help you take control of your life.",
+  heading: "Contact Us",
+  subheading:
+    "Please send us a note and we’ll get back to you as quickly as possible.",
   fields: {
     namePlaceholder: "Your Name",
     emailPlaceholder: "Email Address",

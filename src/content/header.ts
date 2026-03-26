@@ -1,4 +1,4 @@
-import logo from "../assets/images/common/logo.svg";
+import logo from "../assets/images/common/logo.png";
 
 export type HeaderNavLink = {
   href: string;
@@ -16,7 +16,7 @@ export type HeaderContent = {
 
 export const headerContent: HeaderContent = {
   logoSrc: logo,
-  logoAlt: "PersonAI logo",
+  logoAlt: "Lynsi logo",
   ctaText: "Contact Us",
   ctaHref: "#contact",
   navLinks: [

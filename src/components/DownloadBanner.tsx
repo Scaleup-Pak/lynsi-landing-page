@@ -24,7 +24,7 @@ export function DownloadBanner() {
                 {downloadBannerContent.heading}
               </h4>
               <p
-                className="text-center leading-relaxed text-accent sm:text-lg md:text-xl md:leading-8"
+                className="text-center leading-relaxed text-accent/50 sm:text-lg md:text-xl md:leading-8"
               >
                 {downloadBannerContent.description}
               </p>

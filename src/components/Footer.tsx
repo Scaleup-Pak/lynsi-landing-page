@@ -104,7 +104,6 @@ export function Footer() {
 
       <FooterBottomBar
         copyright={legalFooterContent.copyright}
-        socialLinks={legalFooterContent.socialLinks}
       />
     </footer>
   );

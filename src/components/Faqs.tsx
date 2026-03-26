@@ -10,7 +10,10 @@ type FaqRowProps = {
 
 function FaqToggleIcon({ isOpen }: { isOpen: boolean }) {
   return (
-    <span className="relative block h-5 w-5 shrink-0" aria-hidden="true">
+    <span
+      className="relative block h-5 w-5 shrink-0 cursor-pointer"
+      aria-hidden="true"
+    >
       <span className="absolute left-1/2 top-1/2 h-[2px] w-5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary transition-all duration-300 ease-out" />
       <span
         className={`absolute left-1/2 top-1/2 h-5 w-[2px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary transition-all duration-300 ease-out ${
@@ -23,13 +26,11 @@ function FaqToggleIcon({ isOpen }: { isOpen: boolean }) {
 
 function FaqRow({ question, answer, isOpen, onToggle }: FaqRowProps) {
   return (
-    <article
-      className="w-full rounded-[14px] border border-card-border bg-background px-5 py-5 sm:px-[25px] sm:py-[22px]"
-    >
+    <article className="w-full rounded-[14px] border border-card-border bg-background px-5 py-5 sm:px-[25px] sm:py-[22px]">
       <button
         type="button"
         onClick={onToggle}
-        className="flex w-full items-center justify-between gap-4 text-left"
+        className="flex w-full cursor-pointer items-center justify-between gap-4 text-left"
         aria-expanded={isOpen}
       >
         <h3 className="pr-2 text-[18px] font-semibold leading-7 tracking-[-0.01em] text-foreground">
@@ -40,7 +41,9 @@ function FaqRow({ question, answer, isOpen, onToggle }: FaqRowProps) {
 
       <div
         className={`grid overflow-hidden transition-all duration-300 ease-out ${
-          isOpen ? "mt-4 grid-rows-[1fr] opacity-100" : "mt-0 grid-rows-[0fr] opacity-0"
+          isOpen
+            ? "mt-4 grid-rows-[1fr] opacity-100"
+            : "mt-0 grid-rows-[0fr] opacity-0"
         }`}
       >
         <div className="overflow-hidden">
@@ -54,7 +57,9 @@ function FaqRow({ question, answer, isOpen, onToggle }: FaqRowProps) {
 }
 
 export function Faqs() {
-  const [openId, setOpenId] = useState<string | null>(faqsContent.defaultOpenId);
+  const [openId, setOpenId] = useState<string | null>(
+    faqsContent.defaultOpenId,
+  );
 
   return (
     <section id="faqs" className="w-full py-16 sm:py-20 lg:py-24 bg-background">

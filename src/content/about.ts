@@ -1,12 +1,12 @@
 import heroImage from "../assets/images/hero/hero.png";
-import avatar1 from "../assets/images/testimonials/image1.png";
-import avatar2 from "../assets/images/testimonials/image2.png";
-import avatar3 from "../assets/images/testimonials/image3.png";
-import avatar4 from "../assets/images/testimonials/image4.png";
-import avatar5 from "../assets/images/testimonials/image5.png";
-import CheckCircle from "../assets/images/features/CheckCircle.png";
-import Alarm from "../assets/images/features/Alarm.png";
-import PieChart from "../assets/images/features/PieChart.png";
+
+import aboutHero1 from "../assets/images/hero/hero_alt.png";
+
+import iconMood from "../assets/images/features/Smiley.png";
+import iconWearable from "../assets/images/features/Heartbeat.png";
+import iconMedicine from "../assets/images/features/Pill.png";
+import iconScreentime from "../assets/images/features/Hourglass.png";
+import iconMoney from "../assets/images/features/CurrencyCircleDollar.png";
 
 export type AboutFeatureItem = {
   id: string;
@@ -18,13 +18,7 @@ export type AboutContent = {
   main: {
     headline: string;
     description: string;
-    ctaText: string;
-    ctaHref: string;
-  };
-  socialProof: {
-    userCount: string;
-    label: string;
-    avatarSrcs: string[];
+    stats: { value: string; label: string }[];
   };
   previewImage: {
     src: string;
@@ -36,36 +30,66 @@ export type AboutContent = {
     features: AboutFeatureItem[];
     ctaText: string;
     ctaHref: string;
+    images: {
+      src: string;
+      alt: string;
+    }[];
   };
 };
 
 export const aboutContent: AboutContent = {
   main: {
-    headline: "Organize Your Daily Life with a Smarter Personal AI",
+    headline: "See How Your Mood, Health, and Money Connect",
     description:
-      "Person AI helps you plan tasks, set timely reminders, and stay organized across work, home, family, and personal goals—so you can manage your day with clarity and confidence.",
-    ctaText: "Explore Personal AI App",
-    ctaHref: "#download",
-  },
-  socialProof: {
-    userCount: "12000+",
-    label: "Valuable Users",
-    avatarSrcs: [avatar1, avatar2, avatar3, avatar4, avatar5],
+      "Understand how you feel, live, and spend with Lynsi as it connects your check-ins, voice notes, and health data to reveal hidden patterns that shape your routines and long-term well-being.",
+    stats: [
+      { value: "10k+", label: "Downloads" },
+      { value: "50k+", label: "Users" },
+      { value: "⭐ 4.8", label: "Ratings" },
+    ],
   },
   previewImage: {
     src: heroImage,
-    alt: "PersonAI app on smartphone",
+    alt: "Lynsi app on smartphone",
   },
   bottom: {
-    heading: "Plan, Track, & Achieve with PersonalAI",
+    heading: "Lynsi — Your All-in-One Daily Assistant",
     description:
-      "Person AI is your smart task manager that organizes all your tasks, reminders, and goals while helping you stay focused, track progress, and boost your productivity every day.",
+      "Lynsi helps you stay in control of your life by combining mood check-ins, medicine reminders, smart money management, and health tracking—including steps, heart rate (BPM), and daily spendings—all in one simple, intuitive app designed for everyday balance and well-being.",
     features: [
-      { id: "task-management", title: "Task Management", iconSrc: CheckCircle },
-      { id: "reminders-nudges", title: "Reminders & Nudges", iconSrc: Alarm },
-      { id: "ai-suggestions", title: "AI Task Suggestions", iconSrc: PieChart },
+      {
+        id: "mood-tracking",
+        title: "Daily Mood Tracking",
+        iconSrc: iconMood,
+      },
+      {
+        id: "sleep-tracking",
+        title: "Sleep & Recovery",
+        iconSrc: iconScreentime,
+      },
+      {
+        id: "health-integration",
+        title: "Health & Wearable Integration",
+        iconSrc: iconWearable,
+      },
+      {
+        id: "money-management",
+        title: "Money Management",
+        iconSrc: iconMoney,
+      },
+      {
+        id: "medicine-reminder",
+        title: "Medicine Reminder",
+        iconSrc: iconMedicine,
+      },
     ],
-    ctaText: "Explore Personal AI App",
+    ctaText: "Explore Lynsi App",
     ctaHref: "#download",
+    images: [
+      {
+        src: aboutHero1,
+        alt: "Lynsi App Interface 1",
+      }
+    ],
   },
 };

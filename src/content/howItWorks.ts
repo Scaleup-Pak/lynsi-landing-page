@@ -26,45 +26,45 @@ export type HowItWorksContent = {
 };
 
 export const howItWorksContent: HowItWorksContent = {
-  heading: "Your Personal AI Life Assistant",
+  heading: "Your Comprehensive Lynsi AI",
   description:
-    "PersonAI combines intelligent task management with AI-powered insights to help you balance every area of your life—from work and family to wellness and finances.",
+    "Lynsi combines voice, data, and daily logs to give you a complete picture of your life.",
   leftPanel: {
     primaryAction: "Download Now",
     primaryActionHref: "#",
     secondaryAction: "Watch Demo",
     secondaryActionHref: "#features",
     imageSrc: howItWorksImage,
-    imageAlt: "PersonAI app dashboard preview",
+    imageAlt: "Lynsi life dashboard preview",
   },
   features: [
     {
       icon: "risk",
       iconSrc: riskIcon,
-      title: "7 Life Areas Organization",
+      title: "Mood & Sleep Mapping",
       description:
-        "Organize tasks across Work, Home & Family, Personal & Wellness, Learning/Goals, Side Hustle, Events/Social, and Finances. Select what matters and PersonAI keeps it all balanced.",
+        "Log your daily mood and sync sleep data from your wearables. Lynsi identifies how your rest impacts your emotional well-being over time.",
     },
     {
       icon: "report",
       iconSrc: reportIcon,
-      title: "AI-Powered Suggestions",
+      title: "Smart Medication Reminders",
       description:
-        "Get 3-7 personalized task suggestions daily based on your patterns, preferences, and neglected areas. Like or dislike to help AI learn your style.",
+        "Stay on track with your health routine. Get timely, intelligent reminders for medications and supplements tailored to your schedule.",
     },
     {
       icon: "chat",
       iconSrc: chatIcon,
-      title: "Life Balance Insights",
+      title: "Holistic Money Insights",
       description:
-        "Track your life balance score, see which areas need attention, and get gentle nudges to maintain consistency across all aspects of your life.",
+        "Track your spending habits and see how financial stress relates to your health. Lynsi helps you find balance across your physical and financial life.",
     },
     {
       icon: "estimate",
       iconSrc: estimateIcon,
-      title: "Seamless Sync & Offline",
+      title: "AI Coaching",
       description:
-        "Work anywhere with full offline support. All changes sync automatically across devices when online, with automatic backup on every session.",
+        "Receive personalized suggestions to improve your routine based on your unique patterns. From sleep tips to mindfulness nudges, Lynsi is with you.",
     },
   ],
 };

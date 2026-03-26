@@ -22,10 +22,10 @@ export type DownloadBannerContent = {
 
 export const downloadBannerContent: DownloadBannerContent = {
   previewImageSrc: bannerImage,
-  previewImageAlt: "PersonAI app download preview",
-  heading: "Download PersonAI Today",
+  previewImageAlt: "Lynsi app download preview",
+  heading: "Download the Lynsi APP",
   description:
-    "Your personal AI assistant for organizing life across work, home, wellness, and more. Start balancing your life today.",
+    "Download & Discover patterns in your daily life to improve your health, habits, and finances.",
   storeButtons: [
     {
       id: "google-play",
@@ -33,7 +33,7 @@ export const downloadBannerContent: DownloadBannerContent = {
       iconAlt: "Google Play Store icon",
       eyebrow: "GET IT ON",
       label: "Google Play",
-      ariaLabel: "Download PersonAI on Google Play",
+      ariaLabel: "Download Lynsi on Google Play",
       href: "#",
     },
     {
@@ -42,7 +42,7 @@ export const downloadBannerContent: DownloadBannerContent = {
       iconAlt: "Apple App Store icon",
       eyebrow: "Download On the",
       label: "App Store",
-      ariaLabel: "Download PersonAI on the App Store",
+      ariaLabel: "Download Lynsi on the App Store",
       href: "#",
     },
   ],

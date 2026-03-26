@@ -9,7 +9,7 @@ export function TermsOfContent() {
       <div className="px-4 pt-6 pb-4 sm:px-6 sm:pt-8 sm:pb-6 md:px-8 lg:px-16 xl:px-24 2xl:px-[110px]">
         <Link
           to="/"
-          className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+          className="inline-flex rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
         >
           <img
             src={termsOfContentPageContent.logoSrc}

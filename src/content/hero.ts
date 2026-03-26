@@ -25,27 +25,27 @@ export type HeroContent = {
 
 export const heroContent: HeroContent = {
   headline: {
-    accent: "Organize Your Life",
-    lineOne: "Balance Work, Home",
-    lineTwo: "& Everything That Matters",
+    accent: "See How Your Mood,",
+    lineOne: "Health, and Money",
+    lineTwo: "Connect",
   },
   description:
-    "PersonAI is your personal AI assistant that helps you manage tasks across all 7 life areas. Get AI-powered suggestions, weekly planning, and insights to reduce mental load and stay balanced.",
+    "Understand how you feel, live, and spend with Lynsi as it connects your check-ins, voice notes, and health data to reveal hidden patterns that shape your routines and long-term well-being.",
   storeButtons: {
     googlePlay: {
       eyebrow: "GET IT ON",
       label: "Google Play",
-      ariaLabel: "Download PersonAI on Google Play",
+      ariaLabel: "Download Lynsi on Google Play",
       href: "#",
     },
     appStore: {
       eyebrow: "Download On the",
       label: "App Store",
-      ariaLabel: "Download PersonAI on the App Store",
+      ariaLabel: "Download Lynsi on the App Store",
       href: "#",
     },
   },
   imageSrc: heroImage,
   previewImageLink: "#",
-  imageAlt: "PersonAI mobile app interface preview",
+  imageAlt: "Lynsi mobile app interface preview",
 };

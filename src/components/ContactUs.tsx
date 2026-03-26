@@ -1,4 +1,4 @@
-import { ContactForm } from "./ContactForm";
+ import { ContactForm } from "./ContactForm";
 import { contactContent } from "../content/contact";
 
 export function ContactUs() {

@@ -9,7 +9,7 @@ export function TermsOfUse() {
       <div className="px-4 pt-6 pb-4 sm:px-6 sm:pt-8 sm:pb-6 md:px-8 lg:px-16 xl:px-24 2xl:px-32">
         <Link
           to="/"
-          className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+          className="inline-flex rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
         >
           <img
             src={termsOfUsePageContent.logoSrc}
@@ -17,9 +17,7 @@ export function TermsOfUse() {
             className="mb-6 h-auto w-16 sm:mb-8 sm:w-20 md:mb-10 md:w-24 lg:mb-12 lg:w-28 xl:w-32"
           />
         </Link>
-        <h1
-          className="text-xl font-bold text-black sm:text-2xl md:text-3xl lg:text-4xl xl:text-[44px]"
-        >
+        <h1 className="text-xl font-bold text-black sm:text-2xl md:text-3xl lg:text-4xl xl:text-[44px]">
           {termsOfUsePageContent.pageTitle}
         </h1>
       </div>
@@ -80,20 +78,20 @@ export function TermsOfUse() {
           ))}
 
           <div className="mb-12">
-            <h2 className="mb-4 text-lg font-bold text-black sm:text-xl md:text-2xl lg:text-[28px]">
+            {/* <h2 className="mb-4 text-lg font-bold text-black sm:text-xl md:text-2xl lg:text-[28px]">
               {termsOfUsePageContent.contact.title}
-            </h2>
+            </h2> */}
             <p
               className="text-sm text-gray-500 sm:text-base md:text-lg lg:text-xl xl:text-[24px]"
               style={{ fontWeight: 500, lineHeight: "1.447" }}
             >
-              {termsOfUsePageContent.contact.addressLines.map((line) => (
+              {/* {termsOfUsePageContent.contact.addressLines.map((line) => (
                 <span key={line}>
                   {line}
                   <br />
                 </span>
               ))}
-              <br />
+              <br /> */}
               Email:{" "}
               <a
                 href={`mailto:${termsOfUsePageContent.contact.email}`}

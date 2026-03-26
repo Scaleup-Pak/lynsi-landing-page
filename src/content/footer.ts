@@ -1,4 +1,4 @@
-import logo from "../assets/images/common/logo.svg";
+import logo from "../assets/images/common/logo.png";
 import playstoreIcon from "../assets/images/common/playstore.png";
 import appleIcon from "../assets/images/common/applelogo.png";
 
@@ -46,9 +46,9 @@ export type FooterContent = {
 export const footerContent: FooterContent = {
   brand: {
     logoSrc: logo,
-    logoAlt: "PersonAI logo",
+    logoAlt: "Lynsi logo",
     description:
-      "PersonAI is your trusted life organization assistant—helping busy parents and professionals balance work, home, wellness, and more through AI-powered task management and personalized insights. Reduce mental load, increase follow-through, and take control of your life.",
+      "Lynsi helps you understand your life patterns across mood, habits, health, and money. By combining daily check-ins, voice notes, and wearable data, Lynsi turns everyday signals into meaningful insights—so you can make better decisions, consistently.",
   },
   download: {
     heading: "Download App",
@@ -60,7 +60,7 @@ export const footerContent: FooterContent = {
         iconAlt: "Google Play",
         eyebrow: "GET IT ON",
         label: "Google Play",
-        ariaLabel: "Download PersonAI on Google Play",
+        ariaLabel: "Download Lynsi on Google Play",
       },
       {
         id: "app-store",
@@ -69,12 +69,12 @@ export const footerContent: FooterContent = {
         iconAlt: "App Store",
         eyebrow: "Download On the",
         label: "App Store",
-        ariaLabel: "Download PersonAI on the App Store",
+        ariaLabel: "Download Lynsi on the App Store",
       },
     ],
   },
   company: {
-    heading: "Product",
+    heading: "Company",
     links: [
       { label: "About Us", href: "#about" },
       { label: "Features", href: "#features" },
@@ -83,11 +83,11 @@ export const footerContent: FooterContent = {
     ],
   },
   importantLinks: {
-    heading: "Legal & Support",
+    heading: "Important Links",
     links: [
       { label: "Terms of Use & Privacy Policy", href: "/terms" },
       { label: "Contact Us", href: "#contact" },
-      { label: "Help Center", href: "#faqs" },
+      { label: "Terms of Content", href: "/content-terms" },
     ],
   },
 };

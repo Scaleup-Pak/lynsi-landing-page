@@ -16,7 +16,7 @@ export function HowItWorks() {
           </div>
 
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_1.1fr] lg:gap-10">
-            <div className="relative overflow-hidden rounded-[14px] bg-surface-soft">
+            <div className="relative overflow-hidden rounded-[14px] bg-surface-soft aspect-square sm:aspect-[4/3] lg:aspect-auto">
               <img
                 src={howItWorksContent.leftPanel.imageSrc}
                 alt={howItWorksContent.leftPanel.imageAlt}

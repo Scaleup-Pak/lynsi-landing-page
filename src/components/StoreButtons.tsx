@@ -48,10 +48,10 @@ export function StoreButtons({
             loading="lazy"
           />
           <span className="flex flex-col items-start leading-none">
-            <span className="whitespace-nowrap text-[11px] font-semibold tracking-[-0.02em]">
+            <span className="whitespace-nowrap text-[11px] text-black font-semibold tracking-[-0.02em]">
               {button.eyebrow}
             </span>
-            <span className="mt-1 whitespace-nowrap text-[19px] font-semibold leading-[1.1]">
+            <span className="mt-1 whitespace-nowrap text-[19px] text-black font-semibold leading-[1.1]">
               {button.label}
             </span>
           </span>

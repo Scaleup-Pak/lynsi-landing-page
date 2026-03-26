@@ -1,4 +1,4 @@
-import footerLogo from "../assets/images/common/logo.svg";
+import logo from "../assets/images/common/logo.png";
 
 export type TermsUseSection = {
   title: string;
@@ -21,39 +21,58 @@ export type TermsOfUsePageContent = {
   contact: TermsUseContact;
 };
 
-export const termsOfUsePageContent: TermsOfUsePageContent = {
-  logoSrc: footerLogo,
-  logoAlt: "PersonAI Logo",
-  pageTitle: "Terms of Use & Privacy Policy",
-  intro:
-    'Welcome to PersonAI! These Terms of Use ("Terms") govern your access to and use of the PersonAI mobile application and related services (the "Service"). By creating an account or using the Service, you agree to these Terms and our Privacy Policy.',
+export type TermsOfUseFooter = {
+  logo: string;
+  logoAlt: string;
+  logoText: string;
+  copyright: string;
+};
+
+export type TermsOfUseHeader = {
+  logoAlt: string;
+  logoText: string;
+  title: string;
+  subtitle: string;
+  intro: string;
+};
+
+export type TermsOfUseContent = {
+  header: TermsOfUseHeader;
+  sections: TermsUseSection[];
+  footer: TermsOfUseFooter;
+  contact: TermsUseContact;
+};
+
+export const termsOfUseTitle = "Lynsi - Terms of Use";
+export const termsOfUseLastUpdated = "Last Updated: March 24, 2026";
+
+export const termsOfUseContent: TermsOfUseContent = {
+  header: {
+    logoAlt: "Lynsi Logo",
+    logoText: "Lynsi",
+    title: "Terms of Use",
+    subtitle: "Effective Date: October 24, 2024",
+    intro:
+      'Welcome to Lynsi! These Terms of Use ("Terms") govern your access to and use of the Lynsi mobile application and related services (collectively, the "Service"). By using the Service, you agree to these Terms. If you do not agree, please do not use the Service.',
+  },
   sections: [
     {
-      title: "1. The PersonAI Service",
+      title: "1. The Lynsi Service",
       paragraphs: [
-        "PersonAI is a mobile-first life organization assistant designed to help users balance tasks across multiple life areas using intelligent planning and AI-driven suggestions. Our mission is to reduce mental load and help users feel in control of their lives.",
+        "Lynsi provides a suite of tools designed to help you track your well-being, health, and lifestyle. Our service includes daily mood tracking, screen time monitoring, medication reminders, and health integration. Our mission is to help users understand the connections between their physical health, mental well-being, and daily habits.",
         "The Service includes:",
       ],
       bullets: [
-        "Tools to organize tasks across 7 life areas: Work, Home & Family, Personal & Wellness, Learning/Goals, Side Hustle, Events/Social, and Finances.",
-        "A weekly planner with drag-and-drop functionality and monthly views.",
-        "AI-powered task suggestions personalized to your patterns and preferences.",
-        "Life balance insights, activity tracking, and progress analytics.",
+        "Daily mood check-ins and voice notes to track emotional patterns.",
+        "Screen time management to maintain a healthy digital lifestyle.",
+        "Integrations with HealthKit/Google Fit to correlate physical activity with mood.",
+        "Medicine and pill reminders to ensure health routines are met.",
+        "Personalized insights that reveal hidden patterns between mood, productivity, and physical health.",
         "Cross-device sync with automatic backup and full offline functionality.",
-        "Profile customization including life-area colors, AI personality selection, and smart reminder preferences.",
       ],
     },
     {
-      title: "2. Eligibility",
-      bullets: [
-        "You must be at least 13 years old to use PersonAI.",
-        "If you are under 18, you represent that you have parental or guardian consent.",
-        "Certain features may not be available in all regions due to local laws.",
-      ],
-    },
-    {
-      title: "3. Account & User Data",
-      paragraphs: ["When you create an account, you agree that:"],
+      title: "2. User Accounts",
       bullets: [
         "You will provide accurate and current information (name, email, etc.).",
         "You are responsible for maintaining the security of your account credentials.",
@@ -63,13 +82,21 @@ export const termsOfUsePageContent: TermsOfUsePageContent = {
       ],
     },
     {
+      title: "3. User Conduct",
+      bullets: [
+        "You agree not to use the Service for any unlawful or prohibited purpose.",
+        "You will not disrupt or interfere with the security or operation of the Service.",
+        "You will not attempt to gain unauthorized access to any part of the Service.",
+      ],
+    },
+    {
       title: "4. User-Generated Content",
       bullets: [
-        "You retain ownership of all tasks, notes, and data you create in PersonAI.",
+        "You retain ownership of all tasks, notes, and data you create in Lynsi.",
         "You are responsible for the accuracy and legality of your content.",
         "You may not use the Service to store or share illegal, harmful, or infringing content.",
         "We reserve the right to remove content that violates these Terms or applicable laws.",
-        "You grant PersonAI a limited license to process your content solely to provide the Service.",
+        "You grant Lynsi a limited license to process your content solely to provide the Service.",
       ],
     },
     {
@@ -80,21 +107,21 @@ export const termsOfUsePageContent: TermsOfUsePageContent = {
       ],
       bullets: [
         "Account information (name, email, profile details).",
-        "Usage data (tasks created, life areas selected, app activity).",
+        "Lynsi and health data (mood logs, medication logs, spending entries, sleep data).",
         "Device information (operating system, app version, device identifiers).",
-        "AI questionnaire responses (to personalize suggestions).",
+        "Onboarding responses to personalize your Lynsi experience.",
         "We use your data to operate, improve, and personalize the Service.",
-        "We use your data to provide AI suggestions and insights tailored to your patterns.",
+        "We use your data to provide insights tailored to your physical and mental patterns.",
         "We do not sell your personal information to third parties.",
         "We may share anonymized or aggregated data for analytics and service improvement.",
-        "You may request deletion of your account and data at any time via in-app settings or by contacting support@softaims.com.",
+        "You may request deletion of your account and data at any time via in-app settings or by contacting percy@lymbiapp.com.",
         "We comply with Apple's App Tracking Transparency (ATT) and Google Play data policies.",
       ],
     },
     {
       title: "6. Data Sync & Storage",
       bullets: [
-        "PersonAI provides automatic cloud backup and cross-device sync.",
+        "Lynsi provides automatic cloud backup and cross-device sync.",
         "Your data is stored securely using industry-standard encryption.",
         "The app works fully offline; changes sync automatically when you reconnect.",
         "We retain backup copies of your data for recovery purposes.",
@@ -102,20 +129,17 @@ export const termsOfUsePageContent: TermsOfUsePageContent = {
       ],
     },
     {
-      title: "7. AI Features & Suggestions",
+      title: "7. Lynsi Insights & Reminders",
       bullets: [
-        "PersonAI uses artificial intelligence to provide personalized task suggestions.",
-        "AI suggestions are based on your selected life areas, patterns, and questionnaire responses.",
-        "You can like or dislike suggestions to help the AI learn your preferences.",
-        "AI suggestions are recommendations only and do not constitute professional advice.",
-        "We continuously improve AI accuracy, but suggestions may not always be relevant or appropriate.",
+        "Lynsi analyzes your logs to provide personalized lifestyle insights.",
+        "Lynsi insights are recommendations only and do not constitute professional medical or financial advice.",
       ],
     },
     {
-      title: "8. Free & Premium Features",
+      title: "8. Pricing",
       bullets: [
-        "PersonAI is free to use with core features.",
-        "Future premium features (PLUS subscription) may include custom life areas, advanced AI, calendar sync, and collaboration tools.",
+        "Lynsi is free to use with core features.",
+        "Future premium features (Lynsi Pro) may include advanced analytics, unlimited history, and additional integrations.",
         "Premium pricing and features will be clearly disclosed before purchase.",
         "Subscriptions are subject to your app store's terms and billing practices.",
       ],
@@ -135,8 +159,8 @@ export const termsOfUsePageContent: TermsOfUsePageContent = {
     {
       title: "10. Intellectual Property",
       bullets: [
-        "You retain ownership of content you create in PersonAI.",
-        "PersonAI and its design, features, and branding remain the property of Softaims LLC.",
+        "You retain ownership of content you create in Lynsi.",
+        "Lynsi and its design, features, and branding remain the property of Lynsi AI.",
         "Our logos, trademarks, and app elements may not be used without permission.",
         "You may not copy, modify, or distribute any part of the Service without authorization.",
       ],
@@ -148,7 +172,7 @@ export const termsOfUsePageContent: TermsOfUsePageContent = {
       ],
       bullets: [
         "You violate these Terms or applicable laws.",
-        "Your actions create legal risk for PersonAI or its users.",
+        "Your actions create legal risk for Lynsi or its users.",
         "You repeatedly ignore warnings or community guidelines.",
         "You may terminate your account at any time through in-app settings.",
       ],
@@ -160,7 +184,7 @@ export const termsOfUsePageContent: TermsOfUsePageContent = {
         "We do not guarantee uninterrupted, error-free, or secure operation.",
         "AI suggestions are provided for informational purposes only.",
         "We are not responsible for data loss, though we provide automatic backups.",
-        "To the maximum extent permitted by law, PersonAI is not liable for indirect, incidental, or consequential damages.",
+        "To the maximum extent permitted by law, Lynsi is not liable for indirect, incidental, or consequential damages.",
       ],
     },
     {
@@ -177,14 +201,41 @@ export const termsOfUsePageContent: TermsOfUsePageContent = {
         "We may update these Terms and Privacy Policy from time to time. Users will be notified in-app or via email, and continued use of the Service constitutes acceptance of the updated Terms.",
       ],
     },
+    {
+      title: "15. Contact Us",
+      paragraphs: [
+        "If you have any questions about these Terms, please contact us at:",
+      ],
+    },
   ],
   contact: {
     title: "Contact Us",
     addressLines: [
-      "Softaims LLC",
+      "Lynsi Support Team",
       "701 Tillery St unit 12 2364",
       "Austin, TX 78702, United States",
     ],
-    email: "support@softaims.com",
+    email: "percy@lymbiapp.com",
   },
+  footer: {
+    logo: logo,
+    logoAlt: "Lynsi Logo",
+    logoText: "Lynsi",
+    copyright: "© 2026 Lynsi AI. All rights reserved.",
+  },
+};
+
+export const termsOfUsePageContent: TermsOfUsePageContent = {
+  logoSrc: termsOfUseContent.footer.logo,
+  logoAlt: termsOfUseContent.header.logoAlt,
+  pageTitle: termsOfUseContent.header.title,
+  intro: termsOfUseContent.header.intro,
+  sections: termsOfUseContent.sections,
+  contact: termsOfUseContent.contact,
+};
+
+export const termsOfUseContactInfo = {
+  company: "Lynsi Support Team",
+  address: "701 Tillery St unit 12 2364, Austin, TX 78702, United States",
+  email: "percy@lymbiapp.com",
 };

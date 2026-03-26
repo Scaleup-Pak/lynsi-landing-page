@@ -26,7 +26,7 @@ export function HomePage() {
         <section id="contact">
           <ContactUs />
         </section>
-        <section>
+        <section id="download">
           <DownloadBanner />
         </section>
         <section id="footer">

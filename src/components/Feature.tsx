@@ -45,24 +45,7 @@ export function Features() {
                         <p className="text-base leading-7 tracking-[-0.01em] text-muted-foreground sm:text-lg">
                           {step.description}
                         </p>
-                        <button
-                          className="
-    inline-flex items-center justify-center mt-4
-    rounded-[10px]
-    bg-primary text-accent
-    px-6 sm:px-8
-    py-2.5 sm:py-3
-    text-sm sm:text-base font-semibold
-    shadow-sm
-    hover:bg-primary-hover
-    focus-visible:outline-none
-    focus-visible:ring-2
-    focus-visible:ring-primary-ring
-    focus-visible:ring-offset-2
-  "
-                        >
-                          Explore PersonAI App
-                        </button>
+                
                       </div>
                     </div>
                   </div>

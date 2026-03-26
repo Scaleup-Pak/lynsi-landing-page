@@ -14,11 +14,11 @@ export function Testimonial() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-[15px]">
+          <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] lg:grid lg:grid-cols-3 lg:gap-[15px] lg:pb-0">
             {testimonialsContent.items.map((item) => (
               <article
                 key={item.id}
-                className="flex min-h-[250px] flex-col justify-between rounded-[14px] border border-[rgba(33,37,41,0.1)] bg-[rgba(246,246,246,0.4)] p-[22px]"
+                className="flex w-[85vw] shrink-0 snap-center flex-col justify-between rounded-[14px] border border-[rgba(33,37,41,0.1)] bg-[rgba(246,246,246,0.4)] p-[22px] sm:w-[350px] lg:w-auto min-h-[250px]"
               >
                 <p className="text-[16px] leading-[25px] tracking-[-0.01em] text-[#212529]">
                   &ldquo;{item.quote}&rdquo;

@@ -18,7 +18,7 @@ export interface EmailJSSendResult {
 }
 
 export async function sendContactFormWithEmailJS(
-  data: ContactFormPayload
+  data: ContactFormPayload,
 ): Promise<EmailJSSendResult> {
   if (!PUBLIC_KEY || !SERVICE_ID || !TEMPLATE_ID || !TO_EMAIL) {
     return {
@@ -27,16 +27,28 @@ export async function sendContactFormWithEmailJS(
     };
   }
 
+  const senderName = data.name.trim();
+  const senderEmail = data.email.trim().toLowerCase();
+  const recipientEmail = TO_EMAIL.trim().toLowerCase();
+  const subject = data.subject.trim();
+  const message = data.message.trim();
+
   const templateParams = {
-    from_name: data.name,
+    from_name: senderName,
     to_name: "Support Team",
-    from_email: data.email,
+    from_email: senderEmail,
+    user_name: senderName,
+    user_email: senderEmail,
+    sender_name: senderName,
+    sender_email: senderEmail,
+    recipient_email: recipientEmail,
+    email: senderEmail,
     user_type: "Website Visitor",
-    subject: data.subject,
-    message: data.message,
-    reply_to: data.email,
-    to_email: TO_EMAIL,
-    name: data.name,
+    subject,
+    message,
+    reply_to: senderEmail,
+    to_email: recipientEmail,
+    name: senderName,
   };
 
   try {

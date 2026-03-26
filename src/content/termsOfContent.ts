@@ -1,4 +1,4 @@
-import footerLogo from "../assets/images/common/logo.svg";
+import footerLogo from "../assets/images/common/logo.png";
 
 export type TermsContentRule = {
   title: string;
@@ -23,16 +23,16 @@ export type TermsOfContentPageContent = {
 
 export const termsOfContentPageContent: TermsOfContentPageContent = {
   logoSrc: footerLogo,
-  logoAlt: "PersonAI Logo",
+  logoAlt: "Lynsi Logo",
   pageTitle: "Acceptable Use Policy",
   intro:
-    "PersonAI is designed to help you organize your life effectively and respectfully. By using PersonAI, you agree to use the Service in accordance with these guidelines.",
+    "Lynsi is designed to help you organize your life effectively and respectfully. By using Lynsi, you agree to use the Service in accordance with these guidelines.",
   notAllowedTitle: "Prohibited Uses",
   notAllowedRules: [
     {
       title: "Illegal Activity",
       points: [
-        "Do not use PersonAI to plan, coordinate, or document illegal activities.",
+        "Do not use Lynsi to plan, coordinate, or document illegal activities.",
         "Do not store content that violates applicable laws or regulations.",
       ],
     },
@@ -40,7 +40,7 @@ export const termsOfContentPageContent: TermsOfContentPageContent = {
       title: "Harmful Content",
       points: [
         "Do not use the Service to store content that promotes violence, harm, or harassment.",
-        "Do not use PersonAI to facilitate abuse or exploitation of others.",
+        "Do not use Lynsi to facilitate abuse or exploitation of others.",
       ],
     },
     {
@@ -69,9 +69,9 @@ export const termsOfContentPageContent: TermsOfContentPageContent = {
   remember: {
     title: "Remember",
     points: [
-      "PersonAI is your personal productivity tool—use it to organize and improve your life.",
+      "Lynsi is your personal organization tool—use it to organize and improve your life.",
       "Respect our Service and other users by following these guidelines.",
-      "If you have questions about acceptable use, contact us at support@softaims.com.",
+      "If you have questions about acceptable use, contact us at percy@lymbiapp.com.",
     ],
   },
 };

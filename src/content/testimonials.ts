@@ -20,56 +20,56 @@ export type TestimonialsContent = {
 };
 
 export const testimonialsContent: TestimonialsContent = {
-  heading: "Real People, Real Balance",
+  heading: "What Our Users Say About Lynsi",
   description:
-    "Discover how busy parents and professionals are using PersonAI to reduce mental load, stay organized, and finally feel in control of their lives.",
+    "Discover how busy parents and professionals are using Lynsi to reduce mental load, stay organized, and finally feel in control of their lives.",
   items: [
     {
       id: "sarah-johnson",
       quote:
-        "As a working mom of two, PersonAI has been a game-changer. The AI suggestions help me remember the little things that used to slip through the cracks. I finally feel like I'm managing everything without the constant stress.",
-      name: "Sarah Johnson",
-      role: "Marketing Manager & Mom",
+        "Lynsi helped me understand my daily routines and spot patterns I never noticed, making it easier to improve my habits and plan my days.",
+      name: "David Elson",
+      role: "Civil Engineer",
       avatarSrc: avatar1,
     },
     {
       id: "michael-chen",
       quote:
-        "I love how PersonAI balances my side hustle with my full-time job and personal life. The life balance score keeps me honest about where I'm spending my time, and the AI nudges are surprisingly helpful.",
-      name: "Michael Chen",
-      role: "Software Developer & Entrepreneur",
+        "A simple, intuitive app that turns my check-ins, voice notes, and wearable data into meaningful insights I can use to improve my daily routines.",
+      name: "Lorri Warf",
+      role: "Architectural Engineer",
       avatarSrc: avatar2,
     },
     {
-      id: "lisa-martinez",
+      id: "jerry-helfer",
       quote:
-        "The weekly planner with drag-and-drop is so intuitive. I can see everything at once and easily adjust when plans change. The AI personality options make the app feel like a supportive friend rather than just another tool.",
-      name: "Lisa Martinez",
-      role: "Small Business Owner",
+        "I've tried so many productivity apps, but they all felt too rigid. Lynsi understands that life is messy and meets me where I am. The AI learns my patterns and actually helps instead of overwhelming me.",
+      name: "Jerry Helfer",
+      role: "Software Engineer",
       avatarSrc: avatar3,
     },
     {
-      id: "james-wilson",
+      id: "paula-mora",
       quote:
-        "PersonAI helped me realize I was neglecting my wellness while focusing too much on work. The gentle suggestions to take breaks and exercise have made a real difference in my daily routine.",
-      name: "James Wilson",
-      role: "Consultant & Father",
+        "Tracking my lifestyle feels effortless, and Lynsi gives insights I can act on, improving how I manage my health, habits, and daily routines.",
+      name: "Paula Mora",
+      role: "Software Engineer",
       avatarSrc: avatar4,
     },
     {
-      id: "amanda-foster",
+      id: "iva-ryan",
       quote:
-        "I've tried so many productivity apps, but they all felt too rigid. PersonAI understands that life is messy and meets me where I am. The AI learns my patterns and actually helps instead of overwhelming me.",
-      name: "Amanda Foster",
-      role: "Teacher & Parent",
+        "It's amazing how Lynsi combines insights from my health, habits, and finances to give a clear picture of my life and guide better decisions.",
+      name: "Iva Ryan",
+      role: "Civil Engineer",
       avatarSrc: avatar5,
     },
     {
-      id: "david-kim",
+      id: "mary-freund",
       quote:
-        "The offline functionality is crucial for me when traveling. Everything syncs perfectly when I'm back online, and I never lose my data. Plus, the insights help me see patterns I wouldn't have noticed on my own.",
-      name: "David Kim",
-      role: "Sales Executive",
+        "A simple, intuitive app that turns my check-ins, voice notes, and wearable data into meaningful insights I can use to improve my daily routines.",
+      name: "Mary Freund",
+      role: "Architectural Engineer",
       avatarSrc: avatar6,
     },
   ],

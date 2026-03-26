@@ -60,7 +60,7 @@ export function Header({
       )}
 
       <header
-        className={`fixed top-0 z-50 w-full bg-muted-background px-4 py-4 transition-all duration-300 sm:px-6 sm:py-5 md:px-8 md:py-6 lg:px-16 xl:px-24 2xl:px-[106px] ${
+        className={`fixed top-0 z-50 w-full bg-muted-background px-4 py-3 transition-all duration-300 sm:px-6 sm:py-4 md:px-8 lg:px-16 xl:px-24 2xl:px-[106px] ${
           isScrolled ? "shadow-lg" : ""
         }`}
       >
@@ -72,7 +72,7 @@ export function Header({
             <img
               src={headerContent.logoSrc}
               alt={headerContent.logoAlt}
-              className="h-10 transition-all duration-200 sm:h-12 md:h-14 lg:h-16"
+              className="h-6 w-auto object-contain transition-all duration-300 sm:h-8 md:h-10 lg:h-10"
             />
           </div>
 
@@ -98,7 +98,7 @@ export function Header({
           <div className="flex items-center gap-3 sm:gap-4">
             <button
               type="button"
-              className="hidden cursor-pointer whitespace-nowrap rounded-lg bg-primary px-[30px] py-2 text-sm text-accent  transition-all duration-300 hover:scale-105 hover:bg-primary-hover hover:shadow-lg xl:px-6 xl:py-3 xl:text-base lg:block"
+              className="hidden cursor-pointer whitespace-nowrap rounded-lg bg-primary px-[24px] py-1.5 text-sm text-accent transition-all duration-300 hover:scale-105 hover:bg-primary-hover hover:shadow-lg xl:px-6 xl:py-2 xl:text-base lg:block"
               onClick={() => handleNavClick(ctaHref)}
             >
               {ctaText}
@@ -113,7 +113,7 @@ export function Header({
               aria-label="Toggle menu"
             >
               <svg
-                className="h-6 w-6 transition-transform duration-300 sm:h-7 sm:w-7"
+                className="h-5 w-5 transition-transform duration-300 sm:h-6 sm:w-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -145,12 +145,11 @@ export function Header({
                       ? "text-foreground before:scale-125 before:bg-foreground"
                       : "text-muted-foreground"
                   } before:absolute before:left-0 before:top-1/2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-muted-foreground before:transition-all before:duration-300 ${
-                    isMenuOpen ? "animate-slideInUp" : ""
-                  } translate-y-2 opacity-0`}
+                    isMenuOpen ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0 -z-10"
+                  }`}
                   onClick={() => handleNavClick(link.href)}
                   style={{
-                    animationDelay: `${index * 0.1}s`,
-                    animationFillMode: "forwards",
+                    transitionDelay: `${index * 50}ms`
                   }}
                 >
                   {link.label}
@@ -159,12 +158,11 @@ export function Header({
               <button
                 type="button"
                 className={`mt-2 self-start rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-primary-hover hover:shadow-lg sm:px-5 sm:py-2.5 sm:text-base ${
-                  isMenuOpen ? "animate-slideInUp" : ""
-                } translate-y-2 opacity-0`}
+                  isMenuOpen ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0 -z-10"
+                }`}
                 onClick={() => handleNavClick(ctaHref)}
                 style={{
-                  animationDelay: `${navigationLinks.length * 0.1}s`,
-                  animationFillMode: "forwards",
+                  transitionDelay: `${navigationLinks.length * 50}ms`
                 }}
               >
                 {ctaText}
