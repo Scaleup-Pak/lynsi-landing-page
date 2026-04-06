@@ -14,9 +14,37 @@ export type FaqsContent = {
 export const faqsContent: FaqsContent = {
   heading: "Frequently Asked Questions",
   description:
-    "Everything you need to know about Lynsi and how it helps you track and organize your life.",
-  defaultOpenId: "how-does-lynsi-track",
+    "Everything you need to know about Lynsi Mobile App.",
+  defaultOpenId: "connect-wearables",
   items: [
+    {
+      id: "mental-health-or-self-understanding",
+      question:
+        "Is Lynsi considered a mental health app, or something different in how it helps you understand yourself?",
+      answer:
+        "Lynsi is a self-awareness and personal growth companion. It helps you understand patterns in your routines, mood, and habits so you can make better daily decisions. It is not a replacement for medical diagnosis, therapy, or emergency mental health support.",
+    },
+    {
+      id: "easy-and-intuitive",
+      question:
+        "Is Lynsi complicated to use, or is it designed to feel simple and intuitive from the start?",
+      answer:
+        "Lynsi is designed to feel simple from day one. You can start with quick check-ins and voice notes, and the app handles analysis in the background so insights stay clear and easy to follow.",
+    },
+    {
+      id: "privacy-control",
+      question:
+        "Is my information kept private, and do I have full control over what is shared and when?",
+      answer:
+        "Yes. Your data is private, and you stay in control. You decide what to connect, what to share, and when to share it. You can also update permissions at any time to match your comfort level.",
+    },
+    {
+      id: "adapt-to-your-pace",
+      question:
+        "Do I need to use Lynsi every single day for it to be effective, or can it adapt to my pace?",
+      answer:
+        "Lynsi adapts to your pace. Daily use can improve insight quality, but you do not need perfect consistency for it to be helpful. Even periodic check-ins can reveal meaningful trends over time.",
+    },
     {
       id: "how-does-lynsi-track",
       question: "How exactly does Lynsi track and analyze my daily mood and habits?",

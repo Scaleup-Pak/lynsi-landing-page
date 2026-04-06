@@ -71,7 +71,7 @@ export const termsOfContentPageContent: TermsOfContentPageContent = {
     points: [
       "Lynsi is your personal organization tool—use it to organize and improve your life.",
       "Respect our Service and other users by following these guidelines.",
-      "If you have questions about acceptable use, contact us at percy@lymbiapp.com.",
+      "If you have questions about acceptable use, contact us at Lynsiaiapp@gmail.com.",
     ],
   },
 };

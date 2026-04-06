@@ -78,8 +78,9 @@ export const footerContent: FooterContent = {
     links: [
       { label: "About Us", href: "#about" },
       { label: "Features", href: "#features" },
+      { label: "Why Lynsi Exists", href: "#why-lynsi" },
+      { label: "Who Lynsi Is For", href: "#who-lynsi-is-for" },
       { label: "Testimonials", href: "#testimonials" },
-      { label: "FAQ's", href: "#faqs" },
     ],
   },
   importantLinks: {
@@ -87,6 +88,7 @@ export const footerContent: FooterContent = {
     links: [
       { label: "Terms of Use & Privacy Policy", href: "/terms" },
       { label: "Contact Us", href: "#contact" },
+      { label: "FAQ's", href: "#faqs" },
       { label: "Terms of Content", href: "/content-terms" },
     ],
   },

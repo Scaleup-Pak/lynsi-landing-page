@@ -17,27 +17,42 @@ export function Header({
   const [activeLink, setActiveLink] = useState("");
 
   useEffect(() => {
+    const sectionSelectors = navigationLinks
+      .map((link) => link.href)
+      .filter((href) => href.startsWith("#"));
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
 
+      const header = document.querySelector("header");
+      const headerOffset = (header ? header.offsetHeight : 0) + 12;
+
       let current = "";
-      headerContent.activeSections.forEach((section) => {
+      sectionSelectors.forEach((section) => {
         const element = document.querySelector(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          if (rect.top <= 100 && rect.bottom >= 100) {
+          if (rect.top <= headerOffset) {
             current = section;
           }
         }
       });
+
+      if (!current && sectionSelectors.length > 0) {
+        current = sectionSelectors[0];
+      }
+
       setActiveLink(current);
     };
 
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [navigationLinks]);
 
   const handleNavClick = (href: string) => {
+    setActiveLink(href);
+
     const element = document.querySelector(href);
     if (element) {
       const header = document.querySelector("header");
@@ -122,7 +137,11 @@ export function Header({
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+                  d={
+                    isMenuOpen
+                      ? "M6 18L18 6M6 6l12 12"
+                      : "M4 6h16M4 12h16M4 18h16"
+                  }
                   className="transition-all duration-300"
                 />
               </svg>
@@ -132,7 +151,9 @@ export function Header({
 
         <div
           className={`overflow-hidden transition-all duration-500 ease-in-out lg:hidden ${
-            isMenuOpen ? "mt-4 max-h-96 opacity-100 sm:mt-6" : "mt-0 max-h-0 opacity-0"
+            isMenuOpen
+              ? "mt-4 max-h-96 opacity-100 sm:mt-6"
+              : "mt-0 max-h-0 opacity-0"
           }`}
         >
           <div className="rounded-lg border border-primary/30 bg-primary/10 p-4 backdrop-blur-sm sm:p-5">
@@ -145,11 +166,13 @@ export function Header({
                       ? "text-foreground before:scale-125 before:bg-foreground"
                       : "text-muted-foreground"
                   } before:absolute before:left-0 before:top-1/2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-muted-foreground before:transition-all before:duration-300 ${
-                    isMenuOpen ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0 -z-10"
+                    isMenuOpen
+                      ? "translate-y-0 opacity-100"
+                      : "translate-y-2 opacity-0 -z-10"
                   }`}
                   onClick={() => handleNavClick(link.href)}
                   style={{
-                    transitionDelay: `${index * 50}ms`
+                    transitionDelay: `${index * 50}ms`,
                   }}
                 >
                   {link.label}
@@ -158,11 +181,13 @@ export function Header({
               <button
                 type="button"
                 className={`mt-2 self-start rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-primary-hover hover:shadow-lg sm:px-5 sm:py-2.5 sm:text-base ${
-                  isMenuOpen ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0 -z-10"
+                  isMenuOpen
+                    ? "translate-y-0 opacity-100"
+                    : "translate-y-2 opacity-0 -z-10"
                 }`}
                 onClick={() => handleNavClick(ctaHref)}
                 style={{
-                  transitionDelay: `${navigationLinks.length * 50}ms`
+                  transitionDelay: `${navigationLinks.length * 50}ms`,
                 }}
               >
                 {ctaText}

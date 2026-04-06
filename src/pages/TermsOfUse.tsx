@@ -105,10 +105,7 @@ export function TermsOfUse() {
       </div>
 
       <div className="mt-8 border-t border-[#CCCCCC] bg-white sm:mt-10 md:mt-12">
-        <FooterBottomBar
-          copyright={legalFooterContent.copyright}
-          socialLinks={legalFooterContent.socialLinks}
-        />
+        <FooterBottomBar copyright={legalFooterContent.copyright} />
       </div>
     </div>
   );

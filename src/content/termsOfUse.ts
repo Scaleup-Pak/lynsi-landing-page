@@ -66,7 +66,7 @@ export const termsOfUseContent: TermsOfUseContent = {
         "Daily mood check-ins and voice notes to track emotional patterns.",
         "Screen time management to maintain a healthy digital lifestyle.",
         "Integrations with HealthKit/Google Fit to correlate physical activity with mood.",
-        "Medicine and pill reminders to ensure health routines are met.",
+        "Medication and pill reminders to ensure health routines are met.",
         "Personalized insights that reveal hidden patterns between mood, productivity, and physical health.",
         "Cross-device sync with automatic backup and full offline functionality.",
       ],
@@ -114,7 +114,7 @@ export const termsOfUseContent: TermsOfUseContent = {
         "We use your data to provide insights tailored to your physical and mental patterns.",
         "We do not sell your personal information to third parties.",
         "We may share anonymized or aggregated data for analytics and service improvement.",
-        "You may request deletion of your account and data at any time via in-app settings or by contacting percy@lymbiapp.com.",
+        "You may request deletion of your account and data at any time via in-app settings or by contacting Lynsiaiapp@gmail.com.",
         "We comply with Apple's App Tracking Transparency (ATT) and Google Play data policies.",
       ],
     },
@@ -215,7 +215,7 @@ export const termsOfUseContent: TermsOfUseContent = {
       "701 Tillery St unit 12 2364",
       "Austin, TX 78702, United States",
     ],
-    email: "percy@lymbiapp.com",
+    email: "Lynsiaiapp@gmail.com",
   },
   footer: {
     logo: logo,
@@ -237,5 +237,5 @@ export const termsOfUsePageContent: TermsOfUsePageContent = {
 export const termsOfUseContactInfo = {
   company: "Lynsi Support Team",
   address: "701 Tillery St unit 12 2364, Austin, TX 78702, United States",
-  email: "percy@lymbiapp.com",
+  email: "Lynsiaiapp@gmail.com",
 };

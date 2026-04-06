@@ -34,7 +34,7 @@ export function Footer() {
   return (
     <footer className="w-full bg-muted-background">
       <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-[106px]">
-        <div className="mx-auto flex w-full max-w-[1200px] flex-col border-b border-card-border pb-8 pt-10 sm:pb-10 sm:pt-12 lg:h-[618px] lg:flex-row lg:justify-between lg:pb-0 lg:pt-[86px]">
+        <div className="mx-auto flex w-full max-w-[1200px] flex-col border-b border-card-border pb-8 pt-10 sm:pb-10 sm:pt-12 lg:min-h-[618px] lg:flex-row lg:justify-between lg:pb-0 lg:pt-[86px]">
           <div className="w-full max-w-[451px]">
             <img
               src={footerContent.brand.logoSrc}
@@ -102,9 +102,7 @@ export function Footer() {
         </div>
       </div>
 
-      <FooterBottomBar
-        copyright={legalFooterContent.copyright}
-      />
+      <FooterBottomBar copyright={legalFooterContent.copyright} />
     </footer>
   );
 }

@@ -18,15 +18,18 @@ export function Features() {
           </div>
 
           <div className="flex w-full flex-col gap-12 sm:gap-16  lg:gap-[110px]">
-            {featuresContent.steps.map((step) => {
-              const rowDirection = step.reverse
-                ? "lg:flex-row-reverse"
-                : "lg:flex-row";
+            {featuresContent.steps.map((step, index) => {
+              const isEven = index % 2 === 0;
+              const rowDirection = isEven
+                ? "lg:flex-row"
+                : "lg:flex-row-reverse";
+              const cardBg = isEven ? "bg-surface-card" : "bg-background";
+              const chipBg = isEven ? "bg-background" : "bg-[#F3F4F6]";
 
               return (
                 <article
                   key={step.id}
-                  className={`flex w-full flex-col items-center gap-8 bg-surface-card rounded-[10px] p-6 ${rowDirection} lg:gap-12`}
+                  className={`flex w-full flex-col items-center gap-8 ${cardBg} rounded-[10px] p-6 ${rowDirection} lg:gap-12`}
                 >
                   <div className="w-full max-w-[488px]">
                     <div className="flex flex-col items-start gap-8 sm:gap-10">
@@ -39,18 +42,24 @@ export function Features() {
                         />
                       </div>
                       <div className="space-y-2.5">
+                        {step.chip && (
+                          <div
+                            className={`inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium text-foreground mb-2 ${chipBg}`}
+                          >
+                            {step.chip}
+                          </div>
+                        )}
                         <h3 className="text-[30px] font-semibold leading-[1.25] tracking-[-0.02em] text-foreground sm:text-[34px]">
                           {step.title}
                         </h3>
                         <p className="text-base leading-7 tracking-[-0.01em] text-muted-foreground sm:text-lg">
                           {step.description}
                         </p>
-                
                       </div>
                     </div>
                   </div>
 
-                  <div className="w-full max-w-[663px] overflow-hidden rounded-[14px] bg-surface-soft">
+                  <div className="w-full max-w-[663px] overflow-hidden rounded-[14px]">
                     <img
                       src={step.imageSrc}
                       alt={step.imageAlt}

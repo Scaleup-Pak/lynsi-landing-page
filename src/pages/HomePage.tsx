@@ -6,6 +6,9 @@ import { DownloadBanner } from "../components/DownloadBanner";
 import { Footer } from "../components/Footer";
 import { Testimonial } from "../components/Testimonial";
 import { Faqs } from "../components/Faqs";
+import { WhyLynsiExists } from "../components/WhyLynsiExists";
+import { WhoLynsiIsFor } from "../components/WhoLynsiIsFor";
+import { AnonymousSurvey } from "../components/AnonymousSurvey";
 
 export function HomePage() {
   return (
@@ -16,6 +19,15 @@ export function HomePage() {
         {/* <HowItWorks /> */}
         <section>
           <Features />
+        </section>
+        <section>
+          <WhyLynsiExists />
+        </section>
+        <section>
+          <WhoLynsiIsFor />
+        </section>
+        <section>
+          <AnonymousSurvey />
         </section>
         <section>
           <Testimonial />

@@ -22,36 +22,36 @@ export type TestimonialsContent = {
 export const testimonialsContent: TestimonialsContent = {
   heading: "What Our Users Say About Lynsi",
   description:
-    "Discover how busy parents and professionals are using Lynsi to reduce mental load, stay organized, and finally feel in control of their lives.",
+    "Real stories from real users—discover how Lynsi helps people improve their daily habits, manage health and finances, and stay consistent with what matters most, all from one easy-to-use app.",
   items: [
     {
       id: "sarah-johnson",
       quote:
-        "Lynsi helped me understand my daily routines and spot patterns I never noticed, making it easier to improve my habits and plan my days.",
+        "Lynsi helped me see how small changes in my mood and habits were affecting my days, and now I feel more in control and aware of myself.",
       name: "David Elson",
-      role: "Civil Engineer",
+      role: "Professor",
       avatarSrc: avatar1,
     },
     {
       id: "michael-chen",
       quote:
-        "A simple, intuitive app that turns my check-ins, voice notes, and wearable data into meaningful insights I can use to improve my daily routines.",
+        "Using Lynsi made it easy to track my energy and focus patterns. I started noticing trends I had completely missed before.",
       name: "Lorri Warf",
-      role: "Architectural Engineer",
+      role: "Student",
       avatarSrc: avatar2,
     },
     {
       id: "jerry-helfer",
       quote:
-        "I've tried so many productivity apps, but they all felt too rigid. Lynsi understands that life is messy and meets me where I am. The AI learns my patterns and actually helps instead of overwhelming me.",
+        "I didn’t realize how my daily routines were influencing my mindset until Lynsi showed me the patterns, and now I can adjust them thoughtfully.",
       name: "Jerry Helfer",
-      role: "Software Engineer",
+      role: "Psychiatrist",
       avatarSrc: avatar3,
     },
     {
       id: "paula-mora",
       quote:
-        "Tracking my lifestyle feels effortless, and Lynsi gives insights I can act on, improving how I manage my health, habits, and daily routines.",
+        "Lynsi gave me a simple way to understand my emotional ups and downs, helping me make better choices throughout the day.",
       name: "Paula Mora",
       role: "Software Engineer",
       avatarSrc: avatar4,
@@ -59,7 +59,7 @@ export const testimonialsContent: TestimonialsContent = {
     {
       id: "iva-ryan",
       quote:
-        "It's amazing how Lynsi combines insights from my health, habits, and finances to give a clear picture of my life and guide better decisions.",
+        "By reflecting on my check-ins with Lynsi, I can see what triggers stress or low energy, and it’s made managing my routine much easier.",
       name: "Iva Ryan",
       role: "Civil Engineer",
       avatarSrc: avatar5,
@@ -67,7 +67,7 @@ export const testimonialsContent: TestimonialsContent = {
     {
       id: "mary-freund",
       quote:
-        "A simple, intuitive app that turns my check-ins, voice notes, and wearable data into meaningful insights I can use to improve my daily routines.",
+        "Lynsi helped me connect the dots between my habits and my mood, giving me insights that actually made a difference in how I plan my day.",
       name: "Mary Freund",
       role: "Architectural Engineer",
       avatarSrc: avatar6,
