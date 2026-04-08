@@ -11,7 +11,7 @@ export function WhoLynsiIsFor() {
           <div className="flex w-full max-w-[637px] flex-col items-start gap-10">
             <div className="flex w-full flex-col items-start gap-8">
               <div className="flex w-full flex-col items-start gap-5">
-                <h2 className="w-full text-[32px] font-bold leading-[1.2] text-foreground sm:text-[40px] lg:text-[42px] lg:leading-[54px]">
+                <h2 className="w-full text-[28px] font-bold leading-[1.2] text-foreground sm:text-[36px] lg:text-[42px] lg:leading-[54px]">
                   {whoLynsiIsForContent.heading}
                 </h2>
                 <p className="w-full text-base leading-7 tracking-[-0.01em] text-muted-foreground sm:text-[18px] sm:leading-[28px]">
@@ -23,7 +23,7 @@ export function WhoLynsiIsFor() {
                 {whoLynsiIsForContent.audience.map((item) => (
                   <p
                     key={item.id}
-                    className="w-full text-[20px] font-medium leading-7 tracking-[-0.01em] text-foreground sm:text-[22px] lg:text-[24px]"
+                    className="w-full text-[17px] font-medium leading-7 tracking-[-0.01em] text-foreground sm:text-[19px] lg:text-[22px]"
                   >
                     <span className="font-semibold">{item.label}:</span>{" "}
                     <span className="font-normal text-muted-foreground">
@@ -36,7 +36,7 @@ export function WhoLynsiIsFor() {
 
             <a
               href={whoLynsiIsForContent.ctaHref}
-              className="inline-flex min-h-12.5 w-full items-center justify-center rounded-[10px] bg-primary px-5 py-3 text-center text-[15px] font-semibold leading-6 text-white transition-colors duration-200 hover:bg-primary/85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 sm:px-6 sm:text-base sm:leading-7 md:w-auto md:min-w-[320px] md:px-8 md:text-[18px] md:leading-8"
+              className="inline-flex min-h-12.5 w-full items-center justify-center whitespace-nowrap rounded-[10px] bg-primary px-3 py-3 text-center text-[13px] font-semibold leading-6 text-white transition-colors duration-200 hover:bg-primary/85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 sm:px-6 sm:text-base sm:leading-7 md:w-auto md:min-w-[320px] md:px-8 md:text-[18px] md:leading-8"
             >
               {whoLynsiIsForContent.ctaText}
             </a>

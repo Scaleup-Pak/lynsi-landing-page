@@ -19,11 +19,11 @@ export function DownloadBanner() {
               </div>
               <h4
                 style={{ fontWeight: "700" }}
-                className="text-center text-[26px] leading-tight text-accent sm:text-[32px] md:text-[40px] md:leading-[57px]"
+                className="text-center text-[24px] leading-tight text-accent sm:text-[30px] md:text-[40px] md:leading-[57px]"
               >
                 {downloadBannerContent.heading}
               </h4>
-              <p className="text-center text-base leading-relaxed text-accent/50 sm:text-lg md:text-xl md:leading-8">
+              <p className="text-center text-base leading-7 text-accent/50 sm:text-[17px] md:text-[19px] md:leading-8">
                 {downloadBannerContent.description}
               </p>
             </div>

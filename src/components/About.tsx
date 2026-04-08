@@ -29,7 +29,7 @@ export function About() {
           {/* Top section: headline + description + CTA + social proof | image */}
           <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
             <div className="flex flex-1 flex-col items-center text-center lg:items-start lg:text-left gap-8">
-              <h2 className="text-[28px] font-bold leading-tight text-foreground sm:text-[34px] lg:text-[50px]">
+              <h2 className="text-[26px] font-bold leading-tight text-foreground sm:text-[32px] lg:text-[50px]">
                 {aboutContent.main.headline}
               </h2>
               <p className="max-w-[560px] text-base leading-7 text-muted-foreground sm:text-lg">
@@ -65,7 +65,7 @@ export function About() {
           <div className="mt-10 lg:mt-24 flex flex-col gap-10 lg:flex-row lg:items-start lg:gap-16">
             <div className="flex flex-1 flex-col items-center text-center lg:items-start lg:text-left gap-8">
               <div className="flex flex-col gap-4">
-                <h3 className="text-[28px] font-bold leading-tight text-foreground sm:text-[34px] lg:text-[40px]">
+                <h3 className="text-[24px] font-bold leading-tight text-foreground sm:text-[30px] lg:text-[40px]">
                   {aboutContent.bottom.heading}
                 </h3>
                 <p className="max-w-[560px] text-base leading-7 text-muted-foreground sm:text-lg">
@@ -76,10 +76,10 @@ export function About() {
                 </p>
               </div>
 
-              <div className="mt-2 sm:mt-4">
+              <div className="my-6 sm:my-8">
                 <a
                   href={aboutContent.bottom.ctaHref}
-                  className="inline-flex items-center justify-center rounded-xl bg-primary px-8 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-primary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 transition-colors duration-200"
+                  className="inline-flex min-h-12.5 w-full items-center justify-center whitespace-nowrap rounded-[10px] bg-primary px-3 py-3 text-center text-[13px] font-semibold leading-6 text-white transition-colors duration-200 hover:bg-primary/85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 sm:px-6 sm:text-base sm:leading-7 md:w-auto md:min-w-[320px] md:px-8 md:text-[18px] md:leading-8"
                 >
                   {aboutContent.bottom.ctaText}
                 </a>
@@ -111,7 +111,7 @@ export function About() {
                             className="h-7 w-7 object-contain"
                             loading="lazy"
                           />
-                          <span className="text-[20px] font-semibold leading-tight text-foreground sm:text-[22px]">
+                          <span className="text-[18px] font-semibold leading-tight text-foreground sm:text-[20px]">
                             {item.title}
                           </span>
                         </span>

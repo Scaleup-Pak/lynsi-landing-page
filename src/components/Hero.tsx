@@ -19,7 +19,8 @@ const storeButtons: StoreButtonItem[] = [
 ];
 
 export function Hero() {
-  const [lineOneFirstWord, ...lineOneRestWords] = heroContent.headline.lineOne.split(" ");
+  const [lineOneFirstWord, ...lineOneRestWords] =
+    heroContent.headline.lineOne.split(" ");
   const lineOneHighlightedWord = lineOneRestWords.join(" ");
 
   return (
@@ -31,8 +32,11 @@ export function Hero() {
       <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-[106px]">
         <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center">
           <div className="mx-auto flex max-w-[950px] flex-col items-center text-center">
-            <h2 className="relative font-bold text-foreground text-[34px] leading-[44px] sm:text-[42px] sm:leading-[54px] md:text-[50px] md:leading-[66px] lg:text-[50px] lg:leading-[74px]">
-              <span className="text-primary">{heroContent.headline.accent}</span> {lineOneFirstWord}{" "}
+            <h2 className="relative text-[30px] font-bold leading-tight text-foreground sm:text-[38px] sm:leading-tight md:text-[46px] md:leading-tight lg:text-[50px] lg:leading-snug">
+              <span className="text-primary">
+                {heroContent.headline.accent}
+              </span>{" "}
+              {lineOneFirstWord}{" "}
               <span className="relative inline-block">
                 {lineOneHighlightedWord}
                 <svg
@@ -42,10 +46,28 @@ export function Hero() {
                   aria-hidden="true"
                 >
                   <defs>
-                    <linearGradient id="hero-curve-fade" x1="0" y1="0" x2="1" y2="0">
-                      <stop offset="0%" stopColor="var(--color-primary)" stopOpacity="0.95" />
-                      <stop offset="70%" stopColor="var(--color-primary)" stopOpacity="0.65" />
-                      <stop offset="100%" stopColor="var(--color-primary)" stopOpacity="0" />
+                    <linearGradient
+                      id="hero-curve-fade"
+                      x1="0"
+                      y1="0"
+                      x2="1"
+                      y2="0"
+                    >
+                      <stop
+                        offset="0%"
+                        stopColor="var(--color-primary)"
+                        stopOpacity="0.95"
+                      />
+                      <stop
+                        offset="70%"
+                        stopColor="var(--color-primary)"
+                        stopOpacity="0.65"
+                      />
+                      <stop
+                        offset="100%"
+                        stopColor="var(--color-primary)"
+                        stopOpacity="0"
+                      />
                     </linearGradient>
                   </defs>
                   <path
@@ -59,7 +81,7 @@ export function Hero() {
               <span className="mt-2 block">{heroContent.headline.lineTwo}</span>
             </h2>
 
-            <p className="mt-6 max-w-[920px] text-base leading-relaxed text-muted-foreground sm:text-lg sm:leading-8">
+            <p className="mt-6 max-w-[920px] text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
               {heroContent.description}
             </p>
 

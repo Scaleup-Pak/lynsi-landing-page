@@ -5,6 +5,7 @@ import featureImage4 from "../assets/images/features/image4.png";
 import featureImage5 from "../assets/images/features/image5.png";
 import featureImage6 from "../assets/images/features/image6.png";
 import featureImage7 from "../assets/images/features/image7.png";
+import featureImage8 from "../assets/images/features/image8.png";
 import CheckCircle from "../assets/images/features/Smiley.png";
 import Palette from "../assets/images/features/Pill.png";
 import PieChart from "../assets/images/features/Heartbeat.png";
@@ -22,6 +23,7 @@ export type FeatureStep = {
   imageSrc: string;
   imageAlt: string;
   reverse?: boolean;
+  mutedCard?: boolean;
 };
 
 export type FeaturesContent = {
@@ -107,6 +109,18 @@ export const featuresContent: FeaturesContent = {
       iconSrc: phone,
       imageSrc: featureImage7,
       imageAlt: "Lynsi support and helpline",
+    },
+    {
+      id: "clinical-share",
+      chip: "Clinical Share",
+      title: "Share Your Health Insights Directly with Your Clinicians",
+      description:
+        "CliniShare bridges the gap between visits by giving clinicians real-time, objective insights. Instead of relying on memory, you can share what's actually happening-helping your care team respond sooner, adjust faster, and support you more effectively.",
+      iconSrc: PieChart,
+      imageSrc: featureImage8,
+      imageAlt: "Clinical Share insights card and health dashboard preview",
+      reverse: false,
+      mutedCard: true,
     },
   ],
 };

@@ -1,4 +1,4 @@
- import { ContactForm } from "./ContactForm";
+import { ContactForm } from "./ContactForm";
 import { contactContent } from "../content/contact";
 
 export function ContactUs() {
@@ -8,7 +8,7 @@ export function ContactUs() {
         <div className="mx-auto max-w-[1440px]">
           <div className="mx-auto flex w-full max-w-[735px] flex-col items-center gap-10 sm:gap-[60px]">
             <div className="flex w-full flex-col items-center gap-5 text-center">
-              <h2 className="w-full text-center text-[34px] font-bold leading-[1.2] text-foreground sm:text-[46px] sm:leading-[55px]">
+              <h2 className="w-full text-center text-[28px] font-bold leading-[1.2] text-foreground sm:text-[36px] sm:leading-tight lg:text-[42px] lg:leading-13">
                 {contactContent.heading}
               </h2>
               <p className="w-full max-w-[572px] text-center text-base leading-7 tracking-[-0.01em] text-muted-foreground sm:text-[18px]">

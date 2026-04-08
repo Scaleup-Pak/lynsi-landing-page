@@ -33,7 +33,7 @@ function FaqRow({ question, answer, isOpen, onToggle }: FaqRowProps) {
         className="flex w-full cursor-pointer items-center justify-between gap-4 text-left"
         aria-expanded={isOpen}
       >
-        <h3 className="pr-2 text-[18px] font-semibold leading-7 tracking-[-0.01em] text-foreground">
+        <h3 className="pr-2 text-[17px] font-semibold leading-7 tracking-[-0.01em] text-foreground sm:text-[18px]">
           {question}
         </h3>
         <FaqToggleIcon isOpen={isOpen} />
@@ -47,7 +47,7 @@ function FaqRow({ question, answer, isOpen, onToggle }: FaqRowProps) {
         }`}
       >
         <div className="overflow-hidden">
-          <p className="max-w-[1067px] text-[18px] leading-7 tracking-[-0.01em] text-muted-foreground">
+          <p className="max-w-[1067px] text-base leading-7 tracking-[-0.01em] text-muted-foreground sm:text-[17px]">
             {answer}
           </p>
         </div>
@@ -66,7 +66,7 @@ export function Faqs() {
       <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-[106px]">
         <div className="mx-auto flex w-full max-w-[1124px] flex-col items-center gap-10 sm:gap-12 lg:gap-[60px]">
           <div className="flex w-full max-w-[764px] flex-col items-center gap-5 text-center">
-            <h2 className="w-full text-[34px] font-semibold leading-[1.2] text-foreground sm:text-[42px] lg:text-[46px] lg:leading-[55px]">
+            <h2 className="w-full text-[28px] font-semibold leading-[1.2] text-foreground sm:text-[36px] lg:text-[42px] lg:leading-[52px]">
               {faqsContent.heading}
             </h2>
             <p className="max-w-[576px] text-base leading-7 tracking-[-0.01em] text-muted-foreground sm:text-[18px]">

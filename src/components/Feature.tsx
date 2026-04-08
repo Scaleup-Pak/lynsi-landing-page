@@ -9,7 +9,7 @@ export function Features() {
       <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-[106px]">
         <div className="mx-auto flex w-full max-w-[1200px] flex-col items-center gap-12 sm:gap-14 lg:gap-16">
           <div className="flex w-full flex-col items-center gap-5 text-center">
-            <h2 className="w-full text-[34px] font-semibold leading-[1.2] text-foreground sm:text-[42px] sm:leading-[54px]">
+            <h2 className="w-full text-[28px] font-semibold leading-[1.2] text-foreground sm:text-[36px] sm:leading-tight lg:text-[42px] lg:leading-13.5">
               {featuresContent.heading}
             </h2>
             <p className="max-w-[1016px] text-base leading-7 tracking-[-0.01em] text-muted-foreground sm:text-lg">
@@ -20,11 +20,13 @@ export function Features() {
           <div className="flex w-full flex-col gap-12 sm:gap-16  lg:gap-[110px]">
             {featuresContent.steps.map((step, index) => {
               const isEven = index % 2 === 0;
-              const rowDirection = isEven
-                ? "lg:flex-row"
-                : "lg:flex-row-reverse";
-              const cardBg = isEven ? "bg-surface-card" : "bg-background";
-              const chipBg = isEven ? "bg-background" : "bg-[#F3F4F6]";
+              const isReversed = step.reverse ?? !isEven;
+              const useMutedCard = step.mutedCard ?? isEven;
+              const rowDirection = isReversed
+                ? "lg:flex-row-reverse"
+                : "lg:flex-row";
+              const cardBg = useMutedCard ? "bg-surface-card" : "bg-background";
+              const chipBg = useMutedCard ? "bg-background" : "bg-[#F3F4F6]";
 
               return (
                 <article
@@ -49,7 +51,7 @@ export function Features() {
                             {step.chip}
                           </div>
                         )}
-                        <h3 className="text-[30px] font-semibold leading-[1.25] tracking-[-0.02em] text-foreground sm:text-[34px]">
+                        <h3 className="text-[24px] font-semibold leading-[1.25] tracking-[-0.02em] text-foreground sm:text-[30px] lg:text-[34px]">
                           {step.title}
                         </h3>
                         <p className="text-base leading-7 tracking-[-0.01em] text-muted-foreground sm:text-lg">

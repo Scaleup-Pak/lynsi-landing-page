@@ -41,12 +41,12 @@ export function Footer() {
               alt={footerContent.brand.logoAlt}
               className="h-[58px] w-auto"
             />
-            <p className="mt-7 max-w-[451px] text-[18px] leading-7 tracking-[-0.01em] text-muted-foreground">
+            <p className="mt-7 max-w-[451px] text-base leading-7 tracking-[-0.01em] text-muted-foreground sm:text-[17px]">
               {footerContent.brand.description}
             </p>
 
             <div className="mt-10 w-full max-w-[390px]">
-              <h3 className="text-[24px] font-semibold leading-[34px] tracking-[-0.02em] text-foreground">
+              <h3 className="text-[20px] font-semibold leading-8 tracking-[-0.02em] text-foreground sm:text-[22px] lg:text-[24px] lg:leading-8.5">
                 {footerContent.download.heading}
               </h3>
 
@@ -62,7 +62,7 @@ export function Footer() {
 
           <div className="mt-10 grid w-full max-w-[507px] grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-[40px] lg:mt-[108px] lg:gap-[95px]">
             <div className="w-full max-w-[175px]">
-              <h3 className="text-[24px] font-semibold leading-[34px] tracking-[-0.02em] text-foreground">
+              <h3 className="text-[20px] font-semibold leading-8 tracking-[-0.02em] text-foreground sm:text-[22px] lg:text-[24px] lg:leading-8.5">
                 {footerContent.company.heading}
               </h3>
               <ul className="mt-[30px] space-y-5">
@@ -71,7 +71,7 @@ export function Footer() {
                     <button
                       type="button"
                       onClick={() => handleNavClick(link.href)}
-                      className="cursor-pointer text-left text-[18px] leading-7 tracking-[-0.01em] text-muted-foreground transition hover:text-primary"
+                      className="cursor-pointer text-left text-base leading-7 tracking-[-0.01em] text-muted-foreground transition hover:text-primary sm:text-[17px]"
                     >
                       {link.label}
                     </button>
@@ -81,7 +81,7 @@ export function Footer() {
             </div>
 
             <div className="w-full max-w-[237px]">
-              <h3 className="text-[24px] font-semibold leading-[34px] tracking-[-0.02em] text-foreground">
+              <h3 className="text-[20px] font-semibold leading-8 tracking-[-0.02em] text-foreground sm:text-[22px] lg:text-[24px] lg:leading-8.5">
                 {footerContent.importantLinks.heading}
               </h3>
               <ul className="mt-[30px] space-y-5">
@@ -90,7 +90,7 @@ export function Footer() {
                     <button
                       type="button"
                       onClick={() => handleNavClick(link.href)}
-                      className="cursor-pointer text-left text-[18px] leading-7 tracking-[-0.01em] text-muted-foreground transition hover:text-primary"
+                      className="cursor-pointer text-left text-base leading-7 tracking-[-0.01em] text-muted-foreground transition hover:text-primary sm:text-[17px]"
                     >
                       {link.label}
                     </button>

@@ -48,7 +48,7 @@ export function WhyLynsiExists() {
       <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-[106px]">
         <div className="mx-auto flex w-full max-w-[1200px] flex-col items-center gap-14 sm:gap-16 lg:gap-[92px]">
           <div className="flex w-full max-w-[1000px] flex-col items-center gap-5 text-center">
-            <h2 className="text-[34px] font-bold leading-[1.2] text-foreground sm:text-[40px] lg:text-[42px] lg:leading-[54px]">
+            <h2 className="text-[28px] font-bold leading-[1.2] text-foreground sm:text-[36px] lg:text-[42px] lg:leading-[54px]">
               {whyLynsiExistsContent.heading}
             </h2>
             <p className="text-base leading-7 tracking-[-0.01em] text-muted-foreground sm:text-[18px] sm:leading-[28px]">
@@ -74,7 +74,7 @@ export function WhyLynsiExists() {
 
                   <div className="mt-auto flex flex-col gap-3">
                     <h3
-                      className={`text-[24px] font-semibold leading-[34px] tracking-[-0.02em] transition-colors duration-500 ${
+                      className={`text-[20px] font-semibold leading-7 tracking-[-0.02em] transition-colors duration-500 sm:text-[22px] sm:leading-8 ${
                         isActive ? "text-white" : "text-foreground"
                       }`}
                     >
@@ -87,7 +87,7 @@ export function WhyLynsiExists() {
                       }`}
                     >
                       <p
-                        className={`text-[18px] leading-7 tracking-[-0.01em] transition-colors duration-500 ${
+                        className={`text-base leading-7 tracking-[-0.01em] transition-colors duration-500 sm:text-[18px] ${
                           isActive ? "text-white/75" : "text-muted-foreground"
                         }`}
                       >

@@ -23,7 +23,7 @@ export function AnonymousSurvey() {
       <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-[106px]">
         <div className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-10">
           <div className="flex w-full max-w-[795px] flex-col items-start gap-5">
-            <h2 className="w-full text-[32px] font-bold leading-[1.2] text-foreground sm:text-[40px] lg:text-[42px] lg:leading-[54px]">
+            <h2 className="w-full text-[28px] font-bold leading-[1.2] text-foreground sm:text-[36px] lg:text-[42px] lg:leading-[54px]">
               {anonymousSurveyContent.heading}
             </h2>
             <p className="w-full text-base leading-7 tracking-[-0.01em] text-muted-foreground sm:text-[18px] sm:leading-[28px]">
@@ -49,7 +49,7 @@ export function AnonymousSurvey() {
                       aria-expanded={isOpen}
                     >
                       <SurveyToggle isOpen={isOpen} />
-                      <span className="text-[20px] font-semibold leading-8 tracking-[-0.02em] text-foreground sm:text-[24px] sm:leading-[34px]">
+                      <span className="text-[18px] font-semibold leading-7 tracking-[-0.02em] text-foreground sm:text-[22px] sm:leading-8">
                         {item.title}
                       </span>
                     </button>
