@@ -87,7 +87,11 @@ export function Header({
             <img
               src={headerContent.logoSrc}
               alt={headerContent.logoAlt}
+              width={264}
+              height={80}
               className="h-6 w-auto object-contain transition-all duration-300 sm:h-8 md:h-10 lg:h-10"
+              loading="eager"
+              decoding="async"
             />
           </div>
 

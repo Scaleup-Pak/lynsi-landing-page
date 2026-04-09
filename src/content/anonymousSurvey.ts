@@ -1,4 +1,4 @@
-import anonymousSurveyImage from "../assets/images/anonymoussurvey/image.png";
+import anonymousSurveyImage from "../assets/images/anonymoussurvey/image.webp";
 
 export type AnonymousSurveyItem = {
   id: string;

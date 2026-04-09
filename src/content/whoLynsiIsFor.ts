@@ -1,4 +1,4 @@
-import whoLynsiImage from "../assets/images/whoislynsifor/image.png";
+import whoLynsiImage from "../assets/images/whoislynsifor/image.webp";
 
 export type WhoLynsiAudienceItem = {
   id: string;

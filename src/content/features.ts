@@ -1,18 +1,18 @@
-import featureImage1 from "../assets/images/features/image1.png";
-import featureImage2 from "../assets/images/features/image2.png";
-import featureImage3 from "../assets/images/features/image3.png";
-import featureImage4 from "../assets/images/features/image4.png";
-import featureImage5 from "../assets/images/features/image5.png";
-import featureImage6 from "../assets/images/features/image6.png";
-import featureImage7 from "../assets/images/features/image7.png";
-import featureImage8 from "../assets/images/features/image8.png";
-import CheckCircle from "../assets/images/features/Smiley.png";
-import Palette from "../assets/images/features/Pill.png";
-import PieChart from "../assets/images/features/Heartbeat.png";
-import AlarmClock from "../assets/images/features/Hourglass.png";
-import CurrencyCircleDollar from "../assets/images/features/CurrencyCircleDollar.png";
-import Feedback from "../assets/images/features/ph_microscope-fill.png";
-import phone from "../assets/images/features/fluent_call-28-filled.png";
+import featureImage1 from "../assets/images/features/image1.webp";
+import featureImage2 from "../assets/images/features/image2.webp";
+import featureImage3 from "../assets/images/features/image3.webp";
+import featureImage4 from "../assets/images/features/image4.webp";
+import featureImage5 from "../assets/images/features/image5.webp";
+import featureImage6 from "../assets/images/features/image6.webp";
+import featureImage7 from "../assets/images/features/image7.webp";
+import featureImage8 from "../assets/images/features/image8.webp";
+import CheckCircle from "../assets/images/features/Smiley.webp";
+import Palette from "../assets/images/features/Pill.webp";
+import PieChart from "../assets/images/features/Heartbeat.webp";
+import AlarmClock from "../assets/images/features/Hourglass.webp";
+import CurrencyCircleDollar from "../assets/images/features/CurrencyCircleDollar.webp";
+import Feedback from "../assets/images/features/ph_microscope-fill.webp";
+import phone from "../assets/images/features/fluent_call-28-filled.webp";
 
 export type FeatureStep = {
   id: string;

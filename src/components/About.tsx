@@ -55,8 +55,11 @@ export function About() {
               <img
                 src={aboutContent.previewImage.src}
                 alt={aboutContent.previewImage.alt}
+                width={1185}
+                height={960}
                 className="max-h-[620px] w-auto object-contain"
                 loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -108,8 +111,11 @@ export function About() {
                           <img
                             src={item.iconSrc}
                             alt=""
+                            width={72}
+                            height={72}
                             className="h-7 w-7 object-contain"
                             loading="lazy"
+                            decoding="async"
                           />
                           <span className="text-[18px] font-semibold leading-tight text-foreground sm:text-[20px]">
                             {item.title}

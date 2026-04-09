@@ -1,4 +1,4 @@
-import footerLogo from "../assets/images/common/logo.png";
+import footerLogo from "../assets/images/common/logo.webp";
 
 export type TermsContentRule = {
   title: string;

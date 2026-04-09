@@ -31,8 +31,11 @@ export function Testimonial() {
                   <img
                     src={item.avatarSrc}
                     alt={item.name}
+                    width={97}
+                    height={100}
                     className="h-[50px] w-[48px] rounded-[52px] object-cover"
                     loading="lazy"
+                    decoding="async"
                   />
                   <div>
                     <p className="text-base font-semibold leading-7 tracking-[-0.01em] text-[#212529] sm:text-[17px]">

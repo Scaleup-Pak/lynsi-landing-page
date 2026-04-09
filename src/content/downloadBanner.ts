@@ -1,6 +1,6 @@
-import playstoreIcon from "../assets/images/common/playstore.png";
-import appleIcon from "../assets/images/common/applelogo.png";
-import bannerImage from "../assets/images/downloadbanner/banner.png";
+import playstoreIcon from "../assets/images/common/playstore.webp";
+import appleIcon from "../assets/images/common/applelogo.webp";
+import bannerImage from "../assets/images/downloadbanner/banner.webp";
 
 export type DownloadStoreButton = {
   id: string;

@@ -1,6 +1,6 @@
-import logo from "../assets/images/common/logo.png";
-import playstoreIcon from "../assets/images/common/playstore.png";
-import appleIcon from "../assets/images/common/applelogo.png";
+import logo from "../assets/images/common/logo.webp";
+import playstoreIcon from "../assets/images/common/playstore.webp";
+import appleIcon from "../assets/images/common/applelogo.webp";
 
 export type FooterLink = {
   label: string;

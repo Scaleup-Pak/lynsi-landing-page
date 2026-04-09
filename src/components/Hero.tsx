@@ -1,5 +1,5 @@
-import playstoreIcon from "../assets/images/common/playstore.png";
-import appleIcon from "../assets/images/common/applelogo.png";
+import playstoreIcon from "../assets/images/common/playstore.webp";
+import appleIcon from "../assets/images/common/applelogo.webp";
 import { heroContent } from "../content/hero";
 import { StoreButtons, type StoreButtonItem } from "./StoreButtons";
 
@@ -85,7 +85,11 @@ export function Hero() {
               {heroContent.description}
             </p>
 
-            <StoreButtons buttons={storeButtons} className="mt-8" />
+            <StoreButtons
+              buttons={storeButtons}
+              className="mt-8"
+              iconLoading="eager"
+            />
           </div>
 
           <div className="relative mt-10 w-full max-w-[1230px] sm:mt-14">
@@ -99,8 +103,12 @@ export function Hero() {
               <img
                 src={heroContent.imageSrc}
                 alt={heroContent.imageAlt}
+                width={1185}
+                height={960}
                 className="relative z-20 w-full object-contain"
                 loading="eager"
+                decoding="async"
+                fetchPriority="high"
               />
             </a>
           </div>

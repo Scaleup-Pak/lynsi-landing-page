@@ -1,4 +1,4 @@
-import heroImage from "../assets/images/hero/hero.png";
+import heroImage from "../assets/images/hero/hero.webp";
 
 export type StoreButtonContent = {
   eyebrow: string;

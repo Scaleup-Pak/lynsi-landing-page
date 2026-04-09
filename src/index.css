@@ -1,20 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
 /* Tailwind v4 Theme Configuration */
 :root {
-  --font-family-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-family-sans: "Plus Jakarta Sans", sans-serif;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --color-white: #ffffff;
   --color-black: #000000;
   --color-text-strong: #222222;
-  --color-text-muted: rgba(33, 37, 41, 0.60);
+  --color-text-muted: rgba(33, 37, 41, 0.6);
 
   /* Global app theme (extracted from updated desktop header) */
   --theme-surface: #f3f3f3;
-  --theme-primary: #13A3AD;
+  --theme-primary: #13a3ad;
   --theme-primary-hover: #0e7a82;
   --theme-accent: #f6f6f6;
   --theme-accent-hover: #f6f6f6;
@@ -36,7 +35,6 @@
   --header-cta-text: var(--color-white);
   --header-mobile-panel-bg: rgba(204, 180, 178, 0.1);
   --header-mobile-panel-border: rgba(204, 180, 178, 0.3);
-
 }
 
 @theme {
@@ -84,7 +82,6 @@ body,
   }
 }
 
-
 /* Custom text components */
 @layer components {
   .text-paragraph {
@@ -93,8 +90,7 @@ body,
     font-style: normal;
     font-weight: 400;
     line-height: 29px;
-    color: rgba(0, 0, 0, 0.60);
-
+    color: rgba(0, 0, 0, 0.6);
   }
   .text-heading-large {
     font-family: var(--font-family-sans);
@@ -116,7 +112,7 @@ body,
     font-weight: 600;
     font-style: normal;
   }
-  
+
   .text-h1 {
     font-family: var(--font-family-sans);
     font-size: 48px;
@@ -124,5 +120,3 @@ body,
     line-height: 56px;
   }
 }
-
-

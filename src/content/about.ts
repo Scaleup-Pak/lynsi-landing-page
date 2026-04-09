@@ -1,10 +1,10 @@
-import heroImage from "../assets/images/hero/hero.png";
+import heroImage from "../assets/images/hero/hero.webp";
 
-import iconMood from "../assets/images/features/Smiley.png";
-import iconWearable from "../assets/images/features/Heartbeat.png";
-import iconMedication from "../assets/images/features/Pill.png";
-import iconScreentime from "../assets/images/features/Hourglass.png";
-import iconMoney from "../assets/images/features/CurrencyCircleDollar.png";
+import iconMood from "../assets/images/features/Smiley.webp";
+import iconWearable from "../assets/images/features/Heartbeat.webp";
+import iconMedication from "../assets/images/features/Pill.webp";
+import iconScreentime from "../assets/images/features/Hourglass.webp";
+import iconMoney from "../assets/images/features/CurrencyCircleDollar.webp";
 
 export type AboutFeatureItem = {
   id: string;

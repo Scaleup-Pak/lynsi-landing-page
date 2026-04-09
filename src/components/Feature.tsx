@@ -1,5 +1,19 @@
 import { featuresContent } from "../content/features";
 
+const featureImageDimensions: Record<
+  string,
+  { width: number; height: number }
+> = {
+  "mood-tracking": { width: 941, height: 648 },
+  "screen-time-tracking": { width: 868, height: 712 },
+  "health-sleep-integration": { width: 985, height: 816 },
+  "money-management": { width: 868, height: 794 },
+  "medication-reminder": { width: 897, height: 694 },
+  "actionable-feedback": { width: 857, height: 783 },
+  support: { width: 934, height: 723 },
+  "clinical-share": { width: 1056, height: 806 },
+};
+
 export function Features() {
   return (
     <section
@@ -22,6 +36,10 @@ export function Features() {
               const isEven = index % 2 === 0;
               const isReversed = step.reverse ?? !isEven;
               const useMutedCard = step.mutedCard ?? isEven;
+              const imageDimensions = featureImageDimensions[step.id] ?? {
+                width: 1000,
+                height: 750,
+              };
               const rowDirection = isReversed
                 ? "lg:flex-row-reverse"
                 : "lg:flex-row";
@@ -39,8 +57,11 @@ export function Features() {
                         <img
                           src={step.iconSrc}
                           alt=""
+                          width={72}
+                          height={72}
                           className="h-9 w-9 object-contain"
                           loading="lazy"
+                          decoding="async"
                         />
                       </div>
                       <div className="space-y-2.5">
@@ -65,8 +86,11 @@ export function Features() {
                     <img
                       src={step.imageSrc}
                       alt={step.imageAlt}
+                      width={imageDimensions.width}
+                      height={imageDimensions.height}
                       className="h-full w-full object-cover"
                       loading="lazy"
+                      decoding="async"
                     />
                   </div>
                 </article>

@@ -13,6 +13,7 @@ type StoreButtonsProps = {
   className?: string;
   layout?: "wrap" | "responsive-row";
   align?: "center" | "start";
+  iconLoading?: "lazy" | "eager";
 };
 
 export function StoreButtons({
@@ -20,6 +21,7 @@ export function StoreButtons({
   className = "",
   layout = "wrap",
   align = "center",
+  iconLoading = "lazy",
 }: StoreButtonsProps) {
   const baseLayoutClass =
     layout === "responsive-row"
@@ -32,31 +34,43 @@ export function StoreButtons({
 
   return (
     <div className={`${baseLayoutClass} ${alignClass} ${className}`.trim()}>
-      {buttons.map((button) => (
-        <a
-          key={button.id}
-          href={button.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={button.ariaLabel}
-          className="flex h-[56px] w-[181px] max-w-[230px] cursor-pointer items-center gap-2.5 rounded-[12px] bg-white px-3.5 text-accent transition hover:opacity-90 sm:w-[181px] sm:max-w-none"
-        >
-          <img
-            src={button.iconSrc}
-            alt={button.iconAlt}
-            className="h-7 w-7 object-contain"
-            loading="lazy"
-          />
-          <span className="flex flex-col items-start leading-none">
-            <span className="whitespace-nowrap text-[11px] text-black font-semibold tracking-[-0.02em]">
-              {button.eyebrow}
+      {buttons.map((button) => {
+        const iconDimensions =
+          button.id === "google-play"
+            ? { width: 37, height: 41 }
+            : button.id === "app-store"
+              ? { width: 84, height: 84 }
+              : { width: 56, height: 56 };
+
+        return (
+          <a
+            key={button.id}
+            href={button.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={button.ariaLabel}
+            className="flex h-[56px] w-[181px] max-w-[230px] cursor-pointer items-center gap-2.5 rounded-[12px] bg-white px-3.5 text-accent transition hover:opacity-90 sm:w-[181px] sm:max-w-none"
+          >
+            <img
+              src={button.iconSrc}
+              alt={button.iconAlt}
+              width={iconDimensions.width}
+              height={iconDimensions.height}
+              className="h-7 w-7 object-contain"
+              loading={iconLoading}
+              decoding="async"
+            />
+            <span className="flex flex-col items-start leading-none">
+              <span className="whitespace-nowrap text-[11px] text-black font-semibold tracking-[-0.02em]">
+                {button.eyebrow}
+              </span>
+              <span className="mt-1 whitespace-nowrap text-[19px] text-black font-semibold leading-[1.1]">
+                {button.label}
+              </span>
             </span>
-            <span className="mt-1 whitespace-nowrap text-[19px] text-black font-semibold leading-[1.1]">
-              {button.label}
-            </span>
-          </span>
-        </a>
-      ))}
+          </a>
+        );
+      })}
     </div>
   );
 }

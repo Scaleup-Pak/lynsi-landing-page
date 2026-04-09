@@ -1,4 +1,4 @@
-import logo from "../assets/images/common/logo.png";
+import logo from "../assets/images/common/logo.webp";
 
 export type TermsUseSection = {
   title: string;

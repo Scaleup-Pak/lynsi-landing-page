@@ -1,8 +1,8 @@
-import howItWorksImage from "../assets/images/howitworks/howitworks.png";
-import riskIcon from "../assets/images/howitworks/mage_goals-fill.png";
-import reportIcon from "../assets/images/howitworks/Frame.png";
-import chatIcon from "../assets/images/howitworks/DiscordLogo.png";
-import estimateIcon from "../assets/images/howitworks/Calculator.png";
+import howItWorksImage from "../assets/images/howitworks/howitworks.webp";
+import riskIcon from "../assets/images/howitworks/mage_goals-fill.webp";
+import reportIcon from "../assets/images/howitworks/Frame.webp";
+import chatIcon from "../assets/images/howitworks/DiscordLogo.webp";
+import estimateIcon from "../assets/images/howitworks/Calculator.webp";
 
 export type HowItWorksFeature = {
   icon: "risk" | "report" | "chat" | "estimate";

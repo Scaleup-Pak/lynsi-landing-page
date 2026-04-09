@@ -14,7 +14,11 @@ export function TermsOfUse() {
           <img
             src={termsOfUsePageContent.logoSrc}
             alt={termsOfUsePageContent.logoAlt}
+            width={264}
+            height={80}
             className="mb-6 h-auto w-16 sm:mb-8 sm:w-20 md:mb-10 md:w-24 lg:mb-12 lg:w-28 xl:w-32"
+            loading="eager"
+            decoding="async"
           />
         </Link>
         <h1 className="text-xl font-bold text-black sm:text-2xl md:text-3xl lg:text-4xl xl:text-[44px]">

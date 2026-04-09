@@ -39,7 +39,11 @@ export function Footer() {
             <img
               src={footerContent.brand.logoSrc}
               alt={footerContent.brand.logoAlt}
+              width={264}
+              height={80}
               className="h-[58px] w-auto"
+              loading="lazy"
+              decoding="async"
             />
             <p className="mt-7 max-w-[451px] text-base leading-7 tracking-[-0.01em] text-muted-foreground sm:text-[17px]">
               {footerContent.brand.description}

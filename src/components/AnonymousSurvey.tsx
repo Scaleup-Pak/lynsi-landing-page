@@ -76,8 +76,11 @@ export function AnonymousSurvey() {
               <img
                 src={anonymousSurveyContent.previewImage.src}
                 alt={anonymousSurveyContent.previewImage.alt}
+                width={1198}
+                height={752}
                 className="h-auto w-full object-contain"
                 loading="lazy"
+                decoding="async"
               />
             </div>
           </div>

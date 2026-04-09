@@ -1,9 +1,9 @@
-import avatar1 from "../assets/images/testimonials/image1.png";
-import avatar2 from "../assets/images/testimonials/image2.png";
-import avatar3 from "../assets/images/testimonials/image3.png";
-import avatar4 from "../assets/images/testimonials/image4.png";
-import avatar5 from "../assets/images/testimonials/image5.png";
-import avatar6 from "../assets/images/testimonials/image6.png";
+import avatar1 from "../assets/images/testimonials/image1.webp";
+import avatar2 from "../assets/images/testimonials/image2.webp";
+import avatar3 from "../assets/images/testimonials/image3.webp";
+import avatar4 from "../assets/images/testimonials/image4.webp";
+import avatar5 from "../assets/images/testimonials/image5.webp";
+import avatar6 from "../assets/images/testimonials/image6.webp";
 
 export type TestimonialItem = {
   id: string;

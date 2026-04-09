@@ -3,7 +3,10 @@ import { howItWorksContent } from "../content/howItWorks";
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="w-full pt-16 sm:pt-20 lg:pt-24 bg-background">
+    <section
+      id="how-it-works"
+      className="w-full pt-16 sm:pt-20 lg:pt-24 bg-background"
+    >
       <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-[106px]">
         <div className="mx-auto flex w-full max-w-[1200px] flex-col gap-8 sm:gap-10 lg:gap-12">
           <div className="space-y-4 sm:space-y-5">
@@ -20,8 +23,11 @@ export function HowItWorks() {
               <img
                 src={howItWorksContent.leftPanel.imageSrc}
                 alt={howItWorksContent.leftPanel.imageAlt}
+                width={1100}
+                height={1068}
                 className="h-full w-full object-cover object-top"
                 loading="lazy"
+                decoding="async"
               />
 
               <a
@@ -56,8 +62,11 @@ export function HowItWorks() {
                       <img
                         src={item.iconSrc}
                         alt=""
+                        width={56}
+                        height={56}
                         className="h-7 w-7 object-contain"
                         loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <div className="space-y-1">

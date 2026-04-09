@@ -46,8 +46,11 @@ export function WhoLynsiIsFor() {
             <img
               src={whoLynsiIsForContent.image.src}
               alt={whoLynsiIsForContent.image.alt}
+              width={925}
+              height={1136}
               className="h-auto w-full object-contain"
               loading="lazy"
+              decoding="async"
             />
           </div>
         </div>

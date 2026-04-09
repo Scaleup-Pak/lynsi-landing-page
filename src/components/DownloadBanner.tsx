@@ -12,8 +12,11 @@ export function DownloadBanner() {
                 <img
                   src={downloadBannerContent.previewImageSrc}
                   alt={downloadBannerContent.previewImageAlt}
+                  width={1577}
+                  height={830}
                   className="block h-auto w-full"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute -bottom-px left-1/2 h-[3px] w-[110%] -translate-x-1/2 transform bg-white shadow-[0_0_20px_rgba(255,255,255,0.6)] md:w-[105%] lg:w-[115%]"></div>
               </div>

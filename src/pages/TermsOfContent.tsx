@@ -14,7 +14,11 @@ export function TermsOfContent() {
           <img
             src={termsOfContentPageContent.logoSrc}
             alt={termsOfContentPageContent.logoAlt}
+            width={264}
+            height={80}
             className="mb-8 h-auto w-20 sm:mb-12 sm:w-24 md:mb-[70px] md:w-28 lg:w-32"
+            loading="eager"
+            decoding="async"
           />
         </Link>
         <h1
