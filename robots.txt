@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://lalalaugh.com/sitemap.xml
+Sitemap: https://www.lynsi.net/sitemap.xml
+Sitemap: https://lynsi.net/sitemap.xml
