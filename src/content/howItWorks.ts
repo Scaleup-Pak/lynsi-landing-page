@@ -55,7 +55,7 @@ export const howItWorksContent: HowItWorksContent = {
     {
       icon: "chat",
       iconSrc: chatIcon,
-      title: "Holistic Money Insights",
+      title: "Holistic Spending Insights",
       description:
         "Track your spending habits and see how financial stress relates to your health. Lynsi helps you find balance across your physical and financial life.",
     },

@@ -51,7 +51,7 @@ export const aboutContent: AboutContent = {
   bottom: {
     heading: "Lynsi — Where Your Daily Life Turns Into Clear Insight",
     description:
-      "Lynsi helps you stay in control of your life by bringing together mood check-ins, medication reminders, smart money management, and health tracking-including steps, heart rate, and daily spending-into one simple, intuitive app designed to fit naturally into your daily routine.",
+      "Lynsi helps you stay in control of your life by bringing together mood check-ins, medication reminders, smart spending management, and health tracking-including steps, heart rate, and daily spending-into one simple, intuitive app designed to fit naturally into your daily routine.",
     secondaryDescription:
       "Built for clarity and ease, Lynsi helps you understand your patterns and make better decisions. So you can feel more balanced, aware, and in control every day.",
     features: [
@@ -77,8 +77,8 @@ export const aboutContent: AboutContent = {
         iconSrc: iconWearable,
       },
       {
-        id: "money-management",
-        title: "Money Management",
+        id: "spending-management",
+        title: "Spending Management",
         description:
           "Track everyday spending patterns alongside lifestyle habits, so you can make steadier financial decisions with less stress.",
         iconSrc: iconMoney,

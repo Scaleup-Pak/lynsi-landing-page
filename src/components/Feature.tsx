@@ -7,7 +7,7 @@ const featureImageDimensions: Record<
   "mood-tracking": { width: 941, height: 648 },
   "screen-time-tracking": { width: 868, height: 712 },
   "health-sleep-integration": { width: 985, height: 816 },
-  "money-management": { width: 868, height: 794 },
+  "spending-management": { width: 868, height: 794 },
   "medication-reminder": { width: 897, height: 694 },
   "actionable-feedback": { width: 857, height: 783 },
   support: { width: 934, height: 723 },

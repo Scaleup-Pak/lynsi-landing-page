@@ -26,7 +26,7 @@ export type HeroContent = {
 export const heroContent: HeroContent = {
   headline: {
     accent: "See How Your Mood,",
-    lineOne: "Health, and Money",
+    lineOne: "Health, and Spending",
     lineTwo: "Connect",
   },
   description:

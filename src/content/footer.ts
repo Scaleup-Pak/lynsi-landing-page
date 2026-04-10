@@ -48,7 +48,7 @@ export const footerContent: FooterContent = {
     logoSrc: logo,
     logoAlt: "Lynsi logo",
     description:
-      "Lynsi helps you understand your life patterns across mood, habits, health, and money. By combining daily check-ins, voice notes, and wearable data, Lynsi turns everyday signals into meaningful insights—so you can make better decisions, consistently.",
+      "Lynsi helps you understand your life patterns across mood, habits, health, and spending. By combining daily check-ins, voice notes, and wearable data, Lynsi turns everyday signals into meaningful insights—so you can make better decisions, consistently.",
   },
   download: {
     heading: "Download App",

@@ -69,14 +69,14 @@ export const featuresContent: FeaturesContent = {
       imageAlt: "Lynsi health and sleep integration dashboard",
     },
     {
-      id: "money-management",
-      chip: "Money Management",
+      id: "spending-management",
+      chip: "Spending Management",
       title: "Make smarter decisions with clearer spending insight",
       description:
         "Track how much time you spend on your phone and apps daily. See trends, gain insights into your digital habits, and take control of your screen time.",
       iconSrc: CurrencyCircleDollar,
       imageSrc: featureImage4,
-      imageAlt: "Money Management insights",
+      imageAlt: "Spending Management insights",
     },
     {
       id: "medication-reminder",
@@ -101,11 +101,11 @@ export const featuresContent: FeaturesContent = {
       reverse: true,
     },
     {
-      id: "support",
-      chip: "Support",
+      id: "crisis-button",
+      chip: "Crisis Button",
       title: "Need Help, Right Now?",
       description:
-        "If something doesn’t feel right, you don’t have to handle it alone—support is within reach. Connect instantly with a trusted helpline for professional medical guidance.",
+        "If you're feeling suicidal, you are not alone and there is support available. You deserve to feel supported and heard. Lynsi's Crisis Button connects you directly to your local helpline who can provide immediate help and guidance whenever you need it.",
       iconSrc: phone,
       imageSrc: featureImage7,
       imageAlt: "Lynsi support and helpline",
