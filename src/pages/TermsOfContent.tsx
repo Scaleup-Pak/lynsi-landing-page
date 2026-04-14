@@ -1,9 +1,20 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FooterBottomBar } from "../components/FooterBottomBar";
 import { legalFooterContent } from "../content/footerbottombar";
 import { termsOfContentPageContent } from "../content/termsOfContent";
+import { setPageMetadata } from "../utils/seo";
 
 export function TermsOfContent() {
+  useEffect(() => {
+    setPageMetadata({
+      title: "Acceptable Use Policy | Lynsi",
+      description:
+        "Review Lynsi Acceptable Use Policy and content rules, including prohibited uses, enforcement actions, and user responsibilities.",
+      canonicalUrl: "https://www.lynsi.net/content-terms",
+    });
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       <div className="px-4 pt-6 pb-4 sm:px-6 sm:pt-8 sm:pb-6 md:px-8 lg:px-16 xl:px-24 2xl:px-[110px]">

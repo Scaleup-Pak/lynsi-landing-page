@@ -1,9 +1,20 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FooterBottomBar } from "../components/FooterBottomBar";
 import { legalFooterContent } from "../content/footerbottombar";
 import { privacyPolicyPageContent } from "../content/privacyPolicy";
+import { setPageMetadata } from "../utils/seo";
 
 export function PrivacyPolicy() {
+  useEffect(() => {
+    setPageMetadata({
+      title: "Privacy Policy | Lynsi",
+      description:
+        "Read Lynsi Privacy Policy to understand how we collect, use, protect, and share account, usage, and device information.",
+      canonicalUrl: "https://www.lynsi.net/privacy-policy",
+    });
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       <div className="px-4 pt-6 pb-4 sm:px-6 sm:pt-8 sm:pb-6 md:px-8 lg:px-16 xl:px-24 2xl:px-32">
@@ -75,7 +86,7 @@ export function PrivacyPolicy() {
               className="text-sm text-gray-500 sm:text-base md:text-lg lg:text-xl xl:text-[24px]"
               style={{ fontWeight: 500, lineHeight: "1.447" }}
             >
-              Email:
+              Email:{" "}
               <a
                 href={`mailto:${privacyPolicyPageContent.contact.email}`}
                 className="text-primary hover:underline"

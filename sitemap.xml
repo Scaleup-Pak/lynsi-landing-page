@@ -9,6 +9,10 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.lynsi.net/privacy-policy</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.lynsi.net/content-terms</loc>
     <priority>0.7</priority>
   </url>

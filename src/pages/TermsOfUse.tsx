@@ -1,9 +1,20 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FooterBottomBar } from "../components/FooterBottomBar";
 import { legalFooterContent } from "../content/footerbottombar";
 import { termsOfUsePageContent } from "../content/termsOfUse";
+import { setPageMetadata } from "../utils/seo";
 
 export function TermsOfUse() {
+  useEffect(() => {
+    setPageMetadata({
+      title: "Terms of Use | Lynsi",
+      description:
+        "Read Lynsi Terms of Use, including acceptable use, disclaimers, subscriptions, intellectual property, and account policies.",
+      canonicalUrl: "https://www.lynsi.net/terms",
+    });
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       <div className="px-4 pt-6 pb-4 sm:px-6 sm:pt-8 sm:pb-6 md:px-8 lg:px-16 xl:px-24 2xl:px-32">
