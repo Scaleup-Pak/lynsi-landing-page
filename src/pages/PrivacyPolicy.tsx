@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { FooterBottomBar } from "../components/FooterBottomBar";
 import { legalFooterContent } from "../content/footerbottombar";
-import { termsOfUsePageContent } from "../content/termsOfUse";
+import { privacyPolicyPageContent } from "../content/privacyPolicy";
 
-export function TermsOfUse() {
+export function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-white">
       <div className="px-4 pt-6 pb-4 sm:px-6 sm:pt-8 sm:pb-6 md:px-8 lg:px-16 xl:px-24 2xl:px-32">
@@ -12,8 +12,8 @@ export function TermsOfUse() {
           className="inline-flex rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
         >
           <img
-            src={termsOfUsePageContent.logoSrc}
-            alt={termsOfUsePageContent.logoAlt}
+            src={privacyPolicyPageContent.logoSrc}
+            alt={privacyPolicyPageContent.logoAlt}
             width={264}
             height={80}
             className="mb-6 h-auto w-16 sm:mb-8 sm:w-20 md:mb-10 md:w-24 lg:mb-12 lg:w-28 xl:w-32"
@@ -22,10 +22,10 @@ export function TermsOfUse() {
           />
         </Link>
         <h1 className="text-xl font-bold text-black sm:text-2xl md:text-3xl lg:text-4xl xl:text-[44px]">
-          {termsOfUsePageContent.pageTitle}
+          {privacyPolicyPageContent.pageTitle}
         </h1>
         <p className="mt-2 text-xs font-semibold uppercase tracking-[0.08em] text-gray-500 sm:text-sm">
-          {termsOfUsePageContent.lastUpdated}
+          {privacyPolicyPageContent.lastUpdated}
         </p>
       </div>
 
@@ -35,10 +35,10 @@ export function TermsOfUse() {
             className="mb-8 text-sm text-gray-500 sm:text-base md:text-lg lg:text-xl xl:text-[24px]"
             style={{ fontWeight: 500, lineHeight: "1.447" }}
           >
-            {termsOfUsePageContent.intro}
+            {privacyPolicyPageContent.intro}
           </p>
 
-          {termsOfUsePageContent.sections.map((section) => (
+          {privacyPolicyPageContent.sections.map((section) => (
             <div key={section.title} className="mb-8">
               <h2 className="mb-4 text-lg font-bold text-black sm:text-xl md:text-2xl lg:text-[28px]">
                 {section.title}
@@ -62,21 +62,7 @@ export function TermsOfUse() {
                       className="text-sm text-gray-500 sm:text-base md:text-lg lg:text-xl xl:text-[24px]"
                       style={{ fontWeight: 500, lineHeight: "1.447" }}
                     >
-                      •{" "}
-                      {item.includes("support@lalalaugh.com") ? (
-                        <>
-                          {item.split("support@lalalaugh.com")[0]}
-                          <a
-                            href="mailto:support@lalalaugh.com"
-                            className="text-primary hover:underline"
-                          >
-                            support@lalalaugh.com
-                          </a>
-                          {item.split("support@lalalaugh.com")[1]}
-                        </>
-                      ) : (
-                        item
-                      )}
+                      • {item}
                     </li>
                   ))}
                 </ul>
@@ -85,26 +71,16 @@ export function TermsOfUse() {
           ))}
 
           <div className="mb-12">
-            {/* <h2 className="mb-4 text-lg font-bold text-black sm:text-xl md:text-2xl lg:text-[28px]">
-              {termsOfUsePageContent.contact.title}
-            </h2> */}
             <p
               className="text-sm text-gray-500 sm:text-base md:text-lg lg:text-xl xl:text-[24px]"
               style={{ fontWeight: 500, lineHeight: "1.447" }}
             >
-              {/* {termsOfUsePageContent.contact.addressLines.map((line) => (
-                <span key={line}>
-                  {line}
-                  <br />
-                </span>
-              ))}
-              <br /> */}
-              Email:{" "}
+              Email:
               <a
-                href={`mailto:${termsOfUsePageContent.contact.email}`}
+                href={`mailto:${privacyPolicyPageContent.contact.email}`}
                 className="text-primary hover:underline"
               >
-                {termsOfUsePageContent.contact.email}
+                {privacyPolicyPageContent.contact.email}
               </a>
             </p>
           </div>

@@ -86,7 +86,8 @@ export const footerContent: FooterContent = {
   importantLinks: {
     heading: "Important Links",
     links: [
-      { label: "Terms of Use & Privacy Policy", href: "/terms" },
+      { label: "Terms of Use", href: "/terms" },
+      { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "Contact Us", href: "#contact" },
       { label: "FAQ's", href: "#faqs" },
       { label: "Terms of Content", href: "/content-terms" },
