@@ -61,7 +61,20 @@ export function TermsOfUse() {
                   className="mb-4 text-sm text-gray-500 sm:text-base md:text-lg lg:text-xl xl:text-[24px]"
                   style={{ fontWeight: 500, lineHeight: "1.447" }}
                 >
-                  {paragraph}
+                  {paragraph.includes(termsOfUsePageContent.contact.email) ? (
+                    <>
+                      {paragraph.split(termsOfUsePageContent.contact.email)[0]}
+                      <Link
+                        to="/#contact"
+                        className="text-primary hover:underline"
+                      >
+                        {termsOfUsePageContent.contact.email}
+                      </Link>
+                      {paragraph.split(termsOfUsePageContent.contact.email)[1]}
+                    </>
+                  ) : (
+                    paragraph
+                  )}
                 </p>
               ))}
 
@@ -74,16 +87,16 @@ export function TermsOfUse() {
                       style={{ fontWeight: 500, lineHeight: "1.447" }}
                     >
                       •{" "}
-                      {item.includes("support@lalalaugh.com") ? (
+                      {item.includes(termsOfUsePageContent.contact.email) ? (
                         <>
-                          {item.split("support@lalalaugh.com")[0]}
-                          <a
-                            href="mailto:support@lalalaugh.com"
+                          {item.split(termsOfUsePageContent.contact.email)[0]}
+                          <Link
+                            to="/#contact"
                             className="text-primary hover:underline"
                           >
-                            support@lalalaugh.com
-                          </a>
-                          {item.split("support@lalalaugh.com")[1]}
+                            {termsOfUsePageContent.contact.email}
+                          </Link>
+                          {item.split(termsOfUsePageContent.contact.email)[1]}
                         </>
                       ) : (
                         item
@@ -111,12 +124,12 @@ export function TermsOfUse() {
               ))}
               <br /> */}
               Email:{" "}
-              <a
-                href={`mailto:${termsOfUsePageContent.contact.email}`}
+              <Link
+                to="/#contact"
                 className="text-primary hover:underline"
               >
                 {termsOfUsePageContent.contact.email}
-              </a>
+              </Link>
             </p>
           </div>
         </div>

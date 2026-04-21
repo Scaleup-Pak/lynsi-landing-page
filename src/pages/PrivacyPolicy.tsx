@@ -61,7 +61,20 @@ export function PrivacyPolicy() {
                   className="mb-4 text-sm text-gray-500 sm:text-base md:text-lg lg:text-xl xl:text-[24px]"
                   style={{ fontWeight: 500, lineHeight: "1.447" }}
                 >
-                  {paragraph}
+                  {paragraph.includes(privacyPolicyPageContent.contact.email) ? (
+                    <>
+                      {paragraph.split(privacyPolicyPageContent.contact.email)[0]}
+                      <Link
+                        to="/#contact"
+                        className="text-primary hover:underline"
+                      >
+                        {privacyPolicyPageContent.contact.email}
+                      </Link>
+                      {paragraph.split(privacyPolicyPageContent.contact.email)[1]}
+                    </>
+                  ) : (
+                    paragraph
+                  )}
                 </p>
               ))}
 
@@ -73,7 +86,21 @@ export function PrivacyPolicy() {
                       className="text-sm text-gray-500 sm:text-base md:text-lg lg:text-xl xl:text-[24px]"
                       style={{ fontWeight: 500, lineHeight: "1.447" }}
                     >
-                      • {item}
+                      •{" "}
+                      {item.includes(privacyPolicyPageContent.contact.email) ? (
+                        <>
+                          {item.split(privacyPolicyPageContent.contact.email)[0]}
+                          <Link
+                            to="/#contact"
+                            className="text-primary hover:underline"
+                          >
+                            {privacyPolicyPageContent.contact.email}
+                          </Link>
+                          {item.split(privacyPolicyPageContent.contact.email)[1]}
+                        </>
+                      ) : (
+                        item
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -87,12 +114,12 @@ export function PrivacyPolicy() {
               style={{ fontWeight: 500, lineHeight: "1.447" }}
             >
               Email:{" "}
-              <a
-                href={`mailto:${privacyPolicyPageContent.contact.email}`}
+              <Link
+                to="/#contact"
                 className="text-primary hover:underline"
               >
                 {privacyPolicyPageContent.contact.email}
-              </a>
+              </Link>
             </p>
           </div>
         </div>

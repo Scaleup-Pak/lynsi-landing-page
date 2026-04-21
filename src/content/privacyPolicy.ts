@@ -25,79 +25,83 @@ export const privacyPolicyPageContent: PrivacyPolicyPageContent = {
   logoSrc: logo,
   logoAlt: "Lynsi Logo",
   pageTitle: "Privacy Policy",
-  lastUpdated: "Last Updated on: Apr 10, 2026",
+  lastUpdated: "Last Updated on: April 21, 2026",
   intro:
-    "This Privacy Policy explains how Lynsi collects, uses, stores, and protects your information when you use the app and related services.",
+    "This Privacy Policy explains how LimbyAI LLC (\"Lynsi,\" \"we,\" \"us,\" or \"our\") collects, uses, stores, and protects your information when you use the Lynsi mobile application and related services.",
   sections: [
     {
-      title: "Overview",
-      paragraphs: [
-        "This Privacy Policy explains how Lynsi collects, uses, stores, and protects your information when you use the app and related services.",
+      title: "1. Information We Collect",
+      bullets: [
+        "Account Information: Name, email, and profile details.",
+        "App Usage Data: Mood logs, check-ins, reminders, and other in-app entries.",
+        "Health Data: Optional connected data, such as wearable or health integration data you authorize (e.g., via Spike API).",
+        "Trusted Contact Information: If you opt-in to our safety alert feature, we collect the phone numbers of contacts you designate.",
+        "Technical Information: OS version, app version, and diagnostic events.",
       ],
     },
     {
-      title: "Information We Collect",
+      title: "2. How We Use Information",
       bullets: [
-        "Account information such as name, email, and profile details.",
-        "App usage data, including mood logs, check-ins, reminders, and other in-app entries.",
-        "Optional connected data, such as wearable or health integration data you authorize.",
-        "Device and technical information such as OS, app version, and diagnostic events.",
-      ],
-    },
-    {
-      title: "How We Use Information",
-      bullets: [
-        "To operate core app functionality and sync your data across devices.",
-        "To provide personalized insights and reminders based on your usage.",
+        "To operate core app functionality and provide personalized wellness insights.",
+        "To deliver user-triggered SMS alerts and surveys to designated Trusted Contacts.",
         "To maintain security, prevent abuse, and improve app performance.",
       ],
     },
     {
-      title: "Sharing and Disclosure",
+      title: "3. Data Storage and Security",
+      paragraphs: [
+        "Encryption: We prioritize your privacy. All sensitive identifiers, including phone numbers for SMS alerts, are stored using AES-256 encryption.",
+        "Safeguards: We use industry-standard technical and organizational safeguards to protect data. While no security method is perfect, we implement rigorous backend protocols to ensure your data remains secure.",
+      ],
+    },
+    {
+      title: "4. SMS Privacy & Non-Disclosure (Mandatory Disclosure)",
+      paragraphs: [
+        "We maintain strict standards regarding the privacy of your mobile information:",
+      ],
+      bullets: [
+        "No Sharing for Marketing: Mobile information will not be shared with third parties or affiliates for marketing or promotional purposes.",
+        "Exclusion: All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties under any circumstances.",
+        "Strict Usage: Phone numbers provided for the \"Trusted Contacts\" feature are used exclusively for sending user-initiated alerts and surveys.",
+      ],
+    },
+    {
+      title: "5. Sharing and Disclosure",
       bullets: [
         "We do not sell your personal information.",
-        "We may share data with service providers that help us operate the app under confidentiality obligations.",
-        "We may use aggregated or de-identified data for analytics and service improvement.",
+        "We may share data with service providers (such as SMS gateways) solely to facilitate the delivery of the service under strict confidentiality obligations.",
         "We may disclose information where required by law or to protect user safety and legal rights.",
       ],
     },
     {
-      title: "Data Storage and Security",
+      title: "6. Your Choices and Rights",
       bullets: [
-        "We use reasonable technical and organizational safeguards to protect data.",
-        "No security method is perfect, and we cannot guarantee absolute security.",
-        "Backup copies may be retained for limited periods for reliability and recovery.",
+        "SMS Opt-Out: You or your contacts can opt-out of SMS communications at any time by replying STOP.",
+        "Data Deletion: You may request account and data deletion via app settings or by contacting our support team.",
+        "Permissions: You can manage wearable data permissions and contact list access directly through your device settings.",
       ],
     },
     {
-      title: "Your Choices and Rights",
-      bullets: [
-        "You can update profile details and many permissions in app settings.",
-        "You may request account and data deletion via app settings or support email.",
-        "Where required by law, you may have rights to access, correct, export, or delete your data.",
-      ],
-    },
-    {
-      title: "Children's Privacy",
+      title: "7. Children's Privacy",
       paragraphs: [
-        "Lynsi is not directed to children under 13 (or higher age where required by local law). We do not knowingly collect personal data from children.",
+        "Lynsi is not directed to children under 13. We do not knowingly collect personal data from children.",
       ],
     },
     {
-      title: "Policy Updates",
+      title: "8. Policy Updates",
       paragraphs: [
         "We may update this Privacy Policy from time to time. Material updates will be communicated in-app or by other appropriate notice.",
       ],
     },
     {
-      title: "Contact",
+      title: "9. Contact",
       paragraphs: [
-        "For privacy questions or deletion requests, contact: Lynsiaiapp@gmail.com",
+        "For privacy questions or deletion requests, contact: lynsiaiapp@gmail.com",
       ],
     },
   ],
   contact: {
     title: "Contact",
-    email: "Lynsiaiapp@gmail.com",
+    email: "lynsiaiapp@gmail.com",
   },
 };

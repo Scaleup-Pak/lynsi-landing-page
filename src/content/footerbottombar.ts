@@ -10,7 +10,7 @@ export type LegalFooterContent = {
 };
 
 export const legalFooterContent: LegalFooterContent = {
-  copyright: "© Lynsi 2026. All rights reserved.",
+  copyright: "© LimbyAI LLC 2026. All rights reserved.",
   socialLinks: [
     {
       id: "linkedin",
