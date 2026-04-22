@@ -91,6 +91,7 @@ export const footerContent: FooterContent = {
       { label: "Contact Us", href: "#contact" },
       { label: "FAQ's", href: "#faqs" },
       { label: "Terms of Content", href: "/content-terms" },
+      { label: "Report Access Disclosure", href: "/report-disclosure" },
     ],
   },
 };
