@@ -55,7 +55,7 @@ export const footerContent: FooterContent = {
     storeButtons: [
       {
         id: "google-play",
-        href: "#",
+        href: "https://play.google.com/store/apps/details?id=com.lynsi.mh&pcampaignid=web_share",
         iconSrc: playstoreIcon,
         iconAlt: "Google Play",
         eyebrow: "GET IT ON",
@@ -64,7 +64,7 @@ export const footerContent: FooterContent = {
       },
       {
         id: "app-store",
-        href: "#",
+        href: "https://apps.apple.com/us/app/lynsi/id6761358174",
         iconSrc: appleIcon,
         iconAlt: "App Store",
         eyebrow: "Download On the",

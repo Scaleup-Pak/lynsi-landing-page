@@ -34,7 +34,7 @@ export const downloadBannerContent: DownloadBannerContent = {
       eyebrow: "GET IT ON",
       label: "Google Play",
       ariaLabel: "Download Lynsi on Google Play",
-      href: "#",
+      href: "https://play.google.com/store/apps/details?id=com.lynsi.mh&pcampaignid=web_share",
     },
     {
       id: "app-store",
@@ -43,7 +43,7 @@ export const downloadBannerContent: DownloadBannerContent = {
       eyebrow: "Download On the",
       label: "App Store",
       ariaLabel: "Download Lynsi on the App Store",
-      href: "#",
+      href: "https://apps.apple.com/us/app/lynsi/id6761358174",
     },
   ],
 };

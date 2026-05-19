@@ -1,11 +1,12 @@
 import featureImage1 from "../assets/images/features/image1.webp";
-import featureImage2 from "../assets/images/features/image2.webp";
 import featureImage3 from "../assets/images/features/image3.webp";
 import featureImage4 from "../assets/images/features/image4.webp";
 import featureImage5 from "../assets/images/features/image5.webp";
 import featureImage6 from "../assets/images/features/image6.webp";
 import featureImage7 from "../assets/images/features/image7.webp";
 import featureImage8 from "../assets/images/features/image8.webp";
+import phoneticAnalysisImg from "../assets/images/features/phonetic analysis.webp";
+import featureImage2 from "../assets/images/features/image2.webp";
 import CheckCircle from "../assets/images/features/Smiley.webp";
 import Palette from "../assets/images/features/Pill.webp";
 import PieChart from "../assets/images/features/Heartbeat.webp";
@@ -109,6 +110,17 @@ export const featuresContent: FeaturesContent = {
       iconSrc: phone,
       imageSrc: featureImage7,
       imageAlt: "Lynsi support and helpline",
+    },
+    {
+      id: "phonetic-analysis",
+      chip: "Phonetic Analysis",
+      title: "Discover subtle shifts in your voice",
+      description:
+        "Sometimes, the way we speak changes before we fully recognize what we’re feeling. Lynsi uses voice and communication pattern analysis alongside sleep, habits, journaling, and other metrics to help surface subtle shifts over time. By connecting these patterns, Lynsi aims to provide deeper insight, greater self-awareness, and more informed conversations with trusted professionals.",
+      iconSrc: Feedback,
+      imageSrc: phoneticAnalysisImg,
+      imageAlt: "Lynsi voice check-in and phonetic analysis",
+      reverse: true,
     },
     {
       id: "clinical-share",
